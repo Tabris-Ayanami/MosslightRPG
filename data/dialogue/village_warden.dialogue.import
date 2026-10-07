@@ -1,0 +1,16 @@
+[remap]
+
+importer="dialogue_manager"
+importer_version=15
+type="Resource"
+uid="uid://dj0mcdywkm1ga"
+path="res://.godot/imported/village_warden.dialogue-68ab0230bd72918f027e8f07d2bfc3f9.tres"
+
+[deps]
+
+source_file="res://data/dialogue/village_warden.dialogue"
+dest_files=["res://.godot/imported/village_warden.dialogue-68ab0230bd72918f027e8f07d2bfc3f9.tres"]
+
+[params]
+
+defaults=true

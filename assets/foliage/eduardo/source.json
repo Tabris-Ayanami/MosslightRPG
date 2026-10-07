@@ -1,0 +1,10 @@
+{
+  "author": "Eduardo Schildt / PixelageGames",
+  "source": "https://pixelagegames.itch.io/3d-pixelart-vegetation",
+  "tutorial": "https://www.youtube.com/watch?v=iPbYzFWECz4",
+  "archive_sha256": "324b638cf451139497762735069a93ba899798688a652b88278bcd8249c14e29",
+  "asset": "Assets/Textures/leaf_alpha.png",
+  "asset_sha256": "0358ab49082898c6f055f4832fb9af8049994066458c80e5de57067d32bc9459",
+  "license": "MIT, Copyright (c) 2026 Eduardo Schildt",
+  "modifications": "Image unchanged. Godot import generates mipmaps. New project-specific shader, crown geometry and sampling."
+}

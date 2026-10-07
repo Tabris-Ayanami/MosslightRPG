@@ -1,0 +1,38 @@
+{
+  "version": 1,
+  "id": "chapter01",
+  "title": "风铃归途",
+  "completion_quest": "forest_investigation",
+  "encounters": {
+    "encounter.forest.soldier_01": {},
+    "encounter.forest.heavy_guard_01": {
+      "quest": "forest_investigation",
+      "statuses": [
+        "active",
+        "ready",
+        "rewarded"
+      ]
+    },
+    "encounter.forest.fire_elemental_01": {
+      "quest": "village_patrol",
+      "statuses": [
+        "rewarded"
+      ]
+    },
+    "encounter.forest.ogre_01": {
+      "quest": "forest_investigation",
+      "statuses": [
+        "active"
+      ],
+      "complete_objectives": [
+        "break_guard"
+      ],
+      "incomplete_objectives": [
+        "silence_ogre"
+      ],
+      "profile": {
+        "level": 5
+      }
+    }
+  }
+}

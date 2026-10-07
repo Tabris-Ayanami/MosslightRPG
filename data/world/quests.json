@@ -1,0 +1,22 @@
+{
+  "village_patrol": {
+    "id": "village_patrol",
+    "title": "林间小路的求援",
+    "description": "从风铃村南桥回到水庭，再向东过桥进入林间小路。击败小路上的士兵后，返回风铃村向守望人艾琳报告。若你已经击败过士兵，可以直接汇报。",
+    "objectives": [
+      {"id": "clear_soldiers", "type": "event", "event": "enemy_defeated", "subject": "soldier", "label": "击败林间士兵", "target": 1, "retroactive": true}
+    ],
+    "rewards": {"experience": 60, "items": {"healing_potion": 2, "fire_bomb": 1}}
+  },
+  "forest_investigation": {
+    "id": "forest_investigation",
+    "title": "林地深处的异响",
+    "description": "小路暂时安全了，但守望人担心重甲守卫正在驱赶林中的巨兽。前往林地深处，击败一名重甲守卫和被称为「林地暴君」的食人魔，然后带回消息。",
+    "prerequisites": {"quests": ["village_patrol"]},
+    "objectives": [
+      {"id": "break_guard", "type": "event", "event": "enemy_defeated", "subject": "heavy_guard", "label": "击败重甲守卫", "target": 1},
+      {"id": "silence_ogre", "type": "event", "event": "enemy_defeated", "subject": "ogre", "label": "击败林地暴君", "target": 1}
+    ],
+    "rewards": {"experience": 180, "items": {"healing_potion": 3, "hunter_ring": 1}}
+  }
+}

@@ -1,0 +1,25 @@
+{
+  "version": 1,
+  "encounters": {
+    "encounter.forest.soldier_01": {
+      "id": "encounter.forest.soldier_01", "enemy_id": "soldier",
+      "position": [29, 2.4, -4], "respawn_seconds": 45, "safe_distance": 12,
+      "arrival_points": [[26, 2.4, -24], [43, 2.4, -4]]
+    },
+    "encounter.forest.heavy_guard_01": {
+      "id": "encounter.forest.heavy_guard_01", "enemy_id": "heavy_guard",
+      "position": [30, 2.4, -15], "respawn_seconds": 45, "safe_distance": 12,
+      "arrival_points": [[26, 2.4, -1], [42, 2.4, -23]]
+    },
+    "encounter.forest.fire_elemental_01": {
+      "id": "encounter.forest.fire_elemental_01", "enemy_id": "fire_elemental",
+      "position": [22, 2.4, -23], "respawn_seconds": 45, "safe_distance": 12,
+      "arrival_points": [[26, 2.4, -1], [42, 2.4, -20]]
+    },
+    "encounter.forest.ogre_01": {
+      "id": "encounter.forest.ogre_01", "enemy_id": "ogre",
+      "position": [42, 2.4, -25], "respawn_seconds": 45, "safe_distance": 12,
+      "arrival_points": [[26, 2.4, -24], [43, 2.4, -4]]
+    }
+  }
+}

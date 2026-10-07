@@ -1,0 +1,254 @@
+[
+  {
+    "source": "F:\\demo\\crpg\\SourceAssets\\ThirdParty\\Nature\\glTF\\CommonTree_1.gltf",
+    "target": "assets/nature/CommonTree_1.gltf",
+    "author": "Quaternius",
+    "license": "CC0-1.0"
+  },
+  {
+    "source": "F:\\demo\\crpg\\SourceAssets\\ThirdParty\\Nature\\glTF\\CommonTree_3.gltf",
+    "target": "assets/nature/CommonTree_3.gltf",
+    "author": "Quaternius",
+    "license": "CC0-1.0"
+  },
+  {
+    "source": "F:\\demo\\crpg\\SourceAssets\\ThirdParty\\Nature\\glTF\\TwistedTree_1.gltf",
+    "target": "assets/nature/TwistedTree_1.gltf",
+    "author": "Quaternius",
+    "license": "CC0-1.0"
+  },
+  {
+    "source": "F:\\demo\\crpg\\SourceAssets\\ThirdParty\\Nature\\glTF\\Rock_Medium_1.gltf",
+    "target": "assets/nature/Rock_Medium_1.gltf",
+    "author": "Quaternius",
+    "license": "CC0-1.0"
+  },
+  {
+    "source": "F:\\demo\\crpg\\SourceAssets\\ThirdParty\\Nature\\glTF\\Rock_Medium_2.gltf",
+    "target": "assets/nature/Rock_Medium_2.gltf",
+    "author": "Quaternius",
+    "license": "CC0-1.0"
+  },
+  {
+    "source": "F:\\demo\\crpg\\SourceAssets\\ThirdParty\\Nature\\glTF\\Rock_Medium_3.gltf",
+    "target": "assets/nature/Rock_Medium_3.gltf",
+    "author": "Quaternius",
+    "license": "CC0-1.0"
+  },
+  {
+    "source": "F:\\demo\\crpg\\SourceAssets\\ThirdParty\\Nature\\glTF\\Bush_Common.gltf",
+    "target": "assets/nature/Bush_Common.gltf",
+    "author": "Quaternius",
+    "license": "CC0-1.0"
+  },
+  {
+    "source": "F:\\demo\\crpg\\SourceAssets\\ThirdParty\\Nature\\glTF\\Fern_1.gltf",
+    "target": "assets/nature/Fern_1.gltf",
+    "author": "Quaternius",
+    "license": "CC0-1.0"
+  },
+  {
+    "source": "F:\\demo\\crpg\\SourceAssets\\ThirdParty\\Nature\\glTF\\Flower_3_Group.gltf",
+    "target": "assets/nature/Flower_3_Group.gltf",
+    "author": "Quaternius",
+    "license": "CC0-1.0"
+  },
+  {
+    "source": "F:\\demo\\crpg\\SourceAssets\\ThirdParty\\Nature\\glTF\\RockPath_Round_Small_1.gltf",
+    "target": "assets/nature/RockPath_Round_Small_1.gltf",
+    "author": "Quaternius",
+    "license": "CC0-1.0"
+  },
+  {
+    "source": "F:\\demo\\crpg\\SourceAssets\\ThirdParty\\Ruins\\Arch_Round_RoundColumn.fbx",
+    "target": "assets/ruins/Arch_Round_RoundColumn.fbx",
+    "author": "Quaternius",
+    "license": "CC0-1.0"
+  },
+  {
+    "source": "F:\\demo\\crpg\\SourceAssets\\ThirdParty\\Ruins\\Arch_Gothic.fbx",
+    "target": "assets/ruins/Arch_Gothic.fbx",
+    "author": "Quaternius",
+    "license": "CC0-1.0"
+  },
+  {
+    "source": "F:\\demo\\crpg\\SourceAssets\\ThirdParty\\Ruins\\Column_Round.fbx",
+    "target": "assets/ruins/Column_Round.fbx",
+    "author": "Quaternius",
+    "license": "CC0-1.0"
+  },
+  {
+    "source": "F:\\demo\\crpg\\SourceAssets\\ThirdParty\\Ruins\\Column_Round_Short.fbx",
+    "target": "assets/ruins/Column_Round_Short.fbx",
+    "author": "Quaternius",
+    "license": "CC0-1.0"
+  },
+  {
+    "source": "F:\\demo\\crpg\\SourceAssets\\ThirdParty\\Ruins\\BridgeSection.fbx",
+    "target": "assets/ruins/BridgeSection.fbx",
+    "author": "Quaternius",
+    "license": "CC0-1.0"
+  },
+  {
+    "source": "F:\\demo\\crpg\\SourceAssets\\ThirdParty\\Ruins\\Bricks.fbx",
+    "target": "assets/ruins/Bricks.fbx",
+    "author": "Quaternius",
+    "license": "CC0-1.0"
+  },
+  {
+    "source": "F:\\demo\\crpg\\SourceAssets\\ThirdParty\\Ruins\\Brick.fbx",
+    "target": "assets/ruins/Brick.fbx",
+    "author": "Quaternius",
+    "license": "CC0-1.0"
+  },
+  {
+    "source": "F:\\demo\\crpg\\SourceAssets\\ThirdParty\\Ruins\\Floor_Diamond.fbx",
+    "target": "assets/ruins/Floor_Diamond.fbx",
+    "author": "Quaternius",
+    "license": "CC0-1.0"
+  },
+  {
+    "source": "F:/demo/crpg/SourceAssets/ThirdParty/KiritoPackage/reference/Assets/SubspaceHunter/Model/桐人/kirito2.fbx",
+    "target": "assets/characters/kirito/kirito.glb",
+    "author": "Third-party source supplied by user",
+    "license": "Source redistribution terms unverified; not CC0",
+    "conversion": "tools/export_kirito.py",
+    "details": "assets/characters/kirito/source.json"
+  },
+  {
+    "target": "assets/village/House_1.glb",
+    "source": "https://poly.pizza/m/he3p42mUTH",
+    "download": "https://static.poly.pizza/c08c3ac7-e65c-41f5-b200-b00c12103e57.glb",
+    "author": "Quaternius",
+    "license": "CC0-1.0",
+    "sha256": "e3f48621763c1314e1f4f2a98ed6c61b76dfa436cdde263d1014a0404c1ba935"
+  },
+  {
+    "target": "assets/village/House_2.glb",
+    "source": "https://poly.pizza/m/BH2XHWUNmF",
+    "download": "https://static.poly.pizza/341c9305-c6dd-4427-ad00-620ad57eb14e.glb",
+    "author": "Quaternius",
+    "license": "CC0-1.0",
+    "sha256": "74d4c91022414875ec61ab80835705a9c0e9415aa0dd413fc8e83cbfd861a5c9"
+  },
+  {
+    "target": "assets/village/House_3.glb",
+    "source": "https://poly.pizza/m/dcPho4SUA3",
+    "download": "https://static.poly.pizza/b8a2c719-5a70-4d6c-8049-90af7e3f89ee.glb",
+    "author": "Quaternius",
+    "license": "CC0-1.0",
+    "sha256": "39b9d7d4c85e170f64d066a3f762ab88689a614c270e95c52927908fb52fa36a"
+  },
+  {
+    "target": "assets/village/Blacksmith.glb",
+    "source": "https://poly.pizza/m/bV52eTG1Aj",
+    "download": "https://static.poly.pizza/c664d338-cf21-4cda-b0f8-efe0f0826a10.glb",
+    "author": "Quaternius",
+    "license": "CC0-1.0",
+    "sha256": "264fc6abe5be8c091a1c6f293dce9e8ae79b96b50ccec45f0a7fb12201db1d7c"
+  },
+  {
+    "target": "assets/village/Inn.glb",
+    "source": "https://poly.pizza/m/x3ZcGn3jr4",
+    "download": "https://static.poly.pizza/270a08b6-87e1-47eb-ad1c-5fd7be321bcd.glb",
+    "author": "Quaternius",
+    "license": "CC0-1.0",
+    "sha256": "106ac5aef624710d5a8e14ce076d73b4fd85312688cc80cebb6bd45cf61daefe"
+  },
+  {
+    "target": "assets/village/Bell_Tower.glb",
+    "source": "https://poly.pizza/m/ux44tbeQvj",
+    "download": "https://static.poly.pizza/fe8e639d-f07d-4512-a38d-3519b44a5fdc.glb",
+    "author": "Quaternius",
+    "license": "CC0-1.0",
+    "sha256": "44a78a23ea0a70d3fdcc216fe6d95189214fe7077a106c7571daa324c2cbf6b0"
+  },
+  {
+    "target": "assets/village/Fence.glb",
+    "source": "https://poly.pizza/m/UXmKfG81fG",
+    "download": "https://static.poly.pizza/713fa0e6-a648-4896-817d-64b68ed0dac8.glb",
+    "author": "Quaternius",
+    "license": "CC0-1.0",
+    "sha256": "39f1306790e50996916e77797c6a444df98bb5a6215f5af201819ed37eac835c"
+  },
+  {
+    "target": "assets/village/Bags.glb",
+    "source": "https://poly.pizza/m/gzvyAQ797z",
+    "download": "https://static.poly.pizza/5a6e6186-ab59-4c81-a5e1-9beb5e1bb8e9.glb",
+    "author": "Quaternius",
+    "license": "CC0-1.0",
+    "sha256": "ad5ebf8f6c7082662cbefd93e960dc33a9a70239d36b23d0ec0c7fdcc8588c95"
+  },
+  {
+    "target": "assets/village/Hay.glb",
+    "source": "https://poly.pizza/m/Yu8TOERkpw",
+    "download": "https://static.poly.pizza/8ab0043c-9a54-47b1-9b46-31b98d2f6ed8.glb",
+    "author": "Quaternius",
+    "license": "CC0-1.0",
+    "sha256": "a7b39cae2cbd0839647c23c597a4ff64cb3a1086529e78c0169614f4a42655ed"
+  },
+  {
+    "target": "assets/village/Barrel.glb",
+    "source": "https://poly.pizza/m/zjCQP1TAci",
+    "download": "https://static.poly.pizza/df9e4b83-758a-4fc7-b311-70fc949ed7ff.glb",
+    "author": "Quaternius",
+    "license": "CC0-1.0",
+    "sha256": "acf56e7eb64e37ea4ab2a6b072dbbcfd315ba45a511bee141e5541421e2f2238"
+  },
+  {
+    "target": "assets/village/Well.glb",
+    "source": "https://poly.pizza/m/QlqncKYxXb",
+    "download": "https://static.poly.pizza/0e044203-f62e-4dad-ad3e-c3cb6cb393ac.glb",
+    "author": "Quaternius",
+    "license": "CC0-1.0",
+    "sha256": "8e5158984421cfd8ec5040a318a2627911a6dcd7e4b43172bdd7d36f367ad3db"
+  },
+  {
+    "target": "assets/village/Crate.glb",
+    "source": "https://poly.pizza/m/3OEFd1AWfa",
+    "download": "https://static.poly.pizza/f5ed50d1-1317-4c50-befc-cda0380a6c9c.glb",
+    "author": "Quaternius",
+    "license": "CC0-1.0",
+    "sha256": "57031e1b6102dd9bec3e27e966655588d18c3fdede34232a6b6497ce57030a85"
+  },
+  {
+    "target": "assets/village/Bench.glb",
+    "source": "https://poly.pizza/m/jLxjFxFRpw",
+    "download": "https://static.poly.pizza/1361c268-20f7-4e73-a931-ce434c6b503e.glb",
+    "author": "Quaternius",
+    "license": "CC0-1.0",
+    "sha256": "9e923fef29388cca35f8eb473e95bc5ef32fea733682e9e54b6b944e3c055204"
+  },
+  {
+    "target": "assets/village/Market_Stand.glb",
+    "source": "https://poly.pizza/m/hts7l0NZxW",
+    "download": "https://static.poly.pizza/8927a168-7f28-4f44-8a8e-e951aeffdf89.glb",
+    "author": "Quaternius",
+    "license": "CC0-1.0",
+    "sha256": "8f3aadd10a1392e5dcc9890d8c331b53cadbb9afc0ebab935256b2905a3e0487"
+  },
+  {
+    "target": "assets/village/Cart.glb",
+    "source": "https://poly.pizza/m/l7bDe7ak6j",
+    "download": "https://static.poly.pizza/94b32c91-4d46-4172-aadd-10176a4eb543.glb",
+    "author": "Quaternius",
+    "license": "CC0-1.0",
+    "sha256": "c98eee1d2a91a1a894bbbe5b54f0b262bfcfc268d4eab17fbbde5b0a40885f53"
+  },
+  {
+    "target": "assets/village/Bench_2.glb",
+    "source": "https://poly.pizza/m/7uSlZo3n9Y",
+    "download": "https://static.poly.pizza/6d0f118b-d6cf-4e62-8dc8-d50d11d6e402.glb",
+    "author": "Quaternius",
+    "license": "CC0-1.0",
+    "sha256": "7d454debdc6c20ea3a6a8d1961aa9a9db07072899f8f81680c9a7df344de761d"
+  },
+  {
+    "target": "assets/village/Market_Stand_2.glb",
+    "source": "https://poly.pizza/m/DGIM5HGISb",
+    "download": "https://static.poly.pizza/e2633001-4cf5-46fa-ac68-575c9954f4ba.glb",
+    "author": "Quaternius",
+    "license": "CC0-1.0",
+    "sha256": "19b9b99c84d41c0b1124fe286ac3b99668d2f2d489d44affa559188881448d75"
+  }
+]

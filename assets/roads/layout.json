@@ -1,0 +1,51 @@
+{
+	"flagstones": 35,
+	"plaza": "NorthernVillage/MarketSquare/@MeshInstance3D@783",
+	"roads": [
+		{
+			"mesh": "res://assets/roads/road_00.res",
+			"node": "RegionConnections/WindingPath",
+			"triangles": 176
+		},
+		{
+			"mesh": "res://assets/roads/road_01.res",
+			"node": "RegionConnections/@MeshInstance3D@620",
+			"triangles": 140
+		},
+		{
+			"mesh": "res://assets/roads/road_02.res",
+			"node": "RegionConnections/@MeshInstance3D@621",
+			"triangles": 164
+		},
+		{
+			"mesh": "res://assets/roads/road_03.res",
+			"node": "NorthernVillage/DoorstepLanes/WindingPath",
+			"triangles": 38
+		},
+		{
+			"mesh": "res://assets/roads/road_04.res",
+			"node": "NorthernVillage/DoorstepLanes/@MeshInstance3D@778",
+			"triangles": 46
+		},
+		{
+			"mesh": "res://assets/roads/road_05.res",
+			"node": "NorthernVillage/DoorstepLanes/@MeshInstance3D@779",
+			"triangles": 34
+		},
+		{
+			"mesh": "res://assets/roads/road_06.res",
+			"node": "NorthernVillage/DoorstepLanes/@MeshInstance3D@780",
+			"triangles": 36
+		},
+		{
+			"mesh": "res://assets/roads/road_07.res",
+			"node": "NorthernVillage/DoorstepLanes/@MeshInstance3D@781",
+			"triangles": 34
+		},
+		{
+			"mesh": "res://assets/roads/road_08.res",
+			"node": "NorthernVillage/DoorstepLanes/@MeshInstance3D@782",
+			"triangles": 36
+		}
+	]
+}

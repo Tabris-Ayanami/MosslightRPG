@@ -1,0 +1,56 @@
+{
+  "village_warden": {
+    "id": "village_warden",
+    "name": "艾琳",
+    "role": "守望人",
+    "essential": true,
+    "position": [
+      -2.8,
+      2.3,
+      -32.5
+    ],
+    "facing": [
+      0.0,
+      0.0,
+      1.0
+    ],
+    "dialogue": "res://data/dialogue/village_warden.dialogue",
+    "title": "start",
+    "quests": [
+      "village_patrol",
+      "forest_investigation"
+    ],
+    "palette": {
+      "cloak": "526f65",
+      "trim": "ccb886",
+      "hair": "704c38"
+    },
+    "bubble_skin_id": "villager_bubble"
+  },
+  "village_merchant": {
+    "id": "village_merchant",
+    "name": "诺安",
+    "role": "补给商人",
+    "essential": true,
+    "position": [
+      4.5,
+      2.3,
+      -32.5
+    ],
+    "facing": [
+      0.0,
+      0.0,
+      1.0
+    ],
+    "shop_id": "village_supply",
+    "quests": [],
+    "palette": {
+      "cloak": "816750",
+      "trim": "dbbd7d",
+      "hair": "554537"
+    },
+    "dialogue": "res://data/dialogue/village_merchant.dialogue",
+    "title": "start",
+    "bubble_skin_id": "villager_bubble"
+  }
+}

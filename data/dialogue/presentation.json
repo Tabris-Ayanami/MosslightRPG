@@ -1,0 +1,8 @@
+{
+  "default": {"characters_per_second":48, "comma_pause":0.08, "period_pause":0.18},
+  "voices": {
+    "unhurried": {"characters_per_second":44, "comma_pause":0.10, "period_pause":0.20},
+    "clear": {"characters_per_second":52, "comma_pause":0.07, "period_pause":0.15},
+    "measured": {"characters_per_second":36, "comma_pause":0.14, "period_pause":0.26}
+  }
+}

@@ -1,0 +1,113 @@
+{
+  "rules": {
+    "id": "rules",
+    "max_level": 20,
+    "xp_to_next": {
+      "1": 100,
+      "2": 150,
+      "3": 200,
+      "4": 250,
+      "5": 300,
+      "6": 350,
+      "7": 400,
+      "8": 450,
+      "9": 500,
+      "10": 550,
+      "11": 600,
+      "12": 650,
+      "13": 700,
+      "14": 750,
+      "15": 800,
+      "16": 850,
+      "17": 900,
+      "18": 950,
+      "19": 1000
+    },
+    "first_map_max_level": 5
+  },
+  "starter": {
+    "id": "starter",
+    "items": {
+      "healing_potion": 5,
+      "qi_potion": 3,
+      "spell_potion": 3,
+      "fire_bomb": 3,
+      "scout_hood": 1,
+      "linen_tunic": 1,
+      "traveler_pants": 1,
+      "soft_shoes": 1
+    },
+    "equipment": {
+      "head": "scout_hood",
+      "torso": "linen_tunic",
+      "legs": "traveler_pants",
+      "feet": "soft_shoes"
+    },
+    "quickslots": [
+      "healing_potion",
+      "qi_potion",
+      "spell_potion",
+      "fire_bomb"
+    ]
+  },
+  "soldier": {
+    "id": "soldier",
+    "experience": 40,
+    "drops": {
+      "healing_potion": 1
+    },
+    "equipment_rotation": [
+      "iron_longsword",
+      "hunter_dagger",
+      "shortbow",
+      "scout_hood",
+      "linen_tunic",
+      "traveler_pants",
+      "soft_shoes",
+      "hunter_ring"
+    ]
+  },
+  "heavy_guard": {
+    "id": "heavy_guard",
+    "experience": 70,
+    "drops": {
+      "qi_potion": 1
+    },
+    "equipment_rotation": [
+      "wooden_shield",
+      "buckler",
+      "border_spear",
+      "iron_helm",
+      "plate_armor",
+      "iron_greaves"
+    ]
+  },
+  "fire_elemental": {
+    "id": "fire_elemental",
+    "experience": 60,
+    "drops": {
+      "spell_potion": 1,
+      "fire_bomb": 1
+    },
+    "equipment_rotation": [
+      "apprentice_staff",
+      "storm_orb",
+      "scholar_pendant",
+      "qi_ring"
+    ]
+  },
+  "ogre": {
+    "id": "ogre",
+    "experience": 150,
+    "drops": {
+      "healing_potion": 1
+    },
+    "equipment_rotation": [
+      "bone_greataxe",
+      "iron_greatsword",
+      "azure_katana",
+      "hunter_boots",
+      "vigor_belt"
+    ]
+  }
+}

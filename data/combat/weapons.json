@@ -1,0 +1,436 @@
+{
+  "iron_longsword": {
+    "id": "iron_longsword",
+    "name": "铁制长剑",
+    "weapon_type": "Sword",
+    "animation_family": "SINGLE_BLADE",
+    "quality": "Common",
+    "weapon_scaling": 30,
+    "requirements": [
+      {
+        "type": "proficiency",
+        "value": "SINGLE_BLADE"
+      },
+      {
+        "type": "stat",
+        "value": 10,
+        "op": ">=",
+        "stat": "STR"
+      }
+    ],
+    "conditions": [
+      {
+        "type": "proficiency",
+        "value": "SINGLE_BLADE"
+      },
+      {
+        "type": "stat",
+        "value": 10,
+        "op": ">=",
+        "stat": "STR"
+      }
+    ],
+    "special_effects": [],
+    "color": "#CBD6DF",
+    "model_id": "sword",
+    "visual": {
+      "style": "sword",
+      "color": "#CBD6DF"
+    }
+  },
+  "azure_katana": {
+    "id": "azure_katana",
+    "name": "青钢刀",
+    "weapon_type": "Katana",
+    "animation_family": "SINGLE_BLADE",
+    "quality": "Rare",
+    "weapon_scaling": 34,
+    "requirements": [
+      {
+        "type": "proficiency",
+        "value": "SINGLE_BLADE"
+      },
+      {
+        "type": "stat",
+        "value": 12,
+        "op": ">=",
+        "stat": "STR"
+      },
+      {
+        "type": "stat",
+        "value": 11,
+        "op": ">=",
+        "stat": "DEX"
+      }
+    ],
+    "conditions": [
+      {
+        "type": "proficiency",
+        "value": "SINGLE_BLADE"
+      },
+      {
+        "type": "stat",
+        "value": 12,
+        "op": ">=",
+        "stat": "STR"
+      },
+      {
+        "type": "stat",
+        "value": 11,
+        "op": ">=",
+        "stat": "DEX"
+      }
+    ],
+    "special_effects": [
+      "azure_edge"
+    ],
+    "color": "#57B5F1",
+    "model_id": "katana",
+    "visual": {
+      "style": "katana",
+      "color": "#57B5F1"
+    }
+  },
+  "hunter_dagger": {
+    "id": "hunter_dagger",
+    "name": "猎人匕首",
+    "weapon_type": "Dagger",
+    "animation_family": "SHORT_WEAPON",
+    "quality": "Fine",
+    "weapon_scaling": 25,
+    "requirements": [
+      {
+        "type": "proficiency",
+        "value": "SHORT_WEAPON"
+      },
+      {
+        "type": "stat",
+        "value": 11,
+        "op": ">=",
+        "stat": "DEX"
+      }
+    ],
+    "conditions": [
+      {
+        "type": "proficiency",
+        "value": "SHORT_WEAPON"
+      },
+      {
+        "type": "stat",
+        "value": 11,
+        "op": ">=",
+        "stat": "DEX"
+      }
+    ],
+    "special_effects": [
+      "dagger_ambush"
+    ],
+    "color": "#83C59C",
+    "model_id": "dagger",
+    "visual": {
+      "style": "dagger",
+      "color": "#83C59C"
+    }
+  },
+  "shortbow": {
+    "id": "shortbow",
+    "name": "短弓",
+    "weapon_type": "Bow",
+    "animation_family": "BOW",
+    "quality": "Common",
+    "weapon_scaling": 27,
+    "requirements": [
+      {
+        "type": "proficiency",
+        "value": "BOW"
+      },
+      {
+        "type": "stat",
+        "value": 10,
+        "op": ">=",
+        "stat": "DEX"
+      }
+    ],
+    "conditions": [
+      {
+        "type": "proficiency",
+        "value": "BOW"
+      },
+      {
+        "type": "stat",
+        "value": 10,
+        "op": ">=",
+        "stat": "DEX"
+      }
+    ],
+    "special_effects": [],
+    "color": "#BA885A",
+    "model_id": "bow",
+    "visual": {
+      "style": "bow",
+      "color": "#BA885A"
+    }
+  },
+  "border_spear": {
+    "id": "border_spear",
+    "name": "边境长枪",
+    "weapon_type": "Spear",
+    "animation_family": "POLEARM",
+    "quality": "Common",
+    "weapon_scaling": 32,
+    "requirements": [
+      {
+        "type": "proficiency",
+        "value": "POLEARM"
+      },
+      {
+        "type": "stat",
+        "value": 11,
+        "op": ">=",
+        "stat": "STR"
+      }
+    ],
+    "conditions": [
+      {
+        "type": "proficiency",
+        "value": "POLEARM"
+      },
+      {
+        "type": "stat",
+        "value": 11,
+        "op": ">=",
+        "stat": "STR"
+      }
+    ],
+    "special_effects": [
+      "spear_pressure"
+    ],
+    "color": "#DDD8C5",
+    "model_id": "spear",
+    "visual": {
+      "style": "spear",
+      "color": "#DDD8C5"
+    }
+  },
+  "bone_greataxe": {
+    "id": "bone_greataxe",
+    "name": "骨制巨斧",
+    "weapon_type": "GreatAxe",
+    "animation_family": "HEAVY_2H",
+    "quality": "Fine",
+    "weapon_scaling": 38,
+    "requirements": [
+      {
+        "type": "proficiency",
+        "value": "HEAVY_2H"
+      },
+      {
+        "type": "stat",
+        "value": 14,
+        "op": ">=",
+        "stat": "STR"
+      }
+    ],
+    "conditions": [
+      {
+        "type": "proficiency",
+        "value": "HEAVY_2H"
+      },
+      {
+        "type": "stat",
+        "value": 14,
+        "op": ">=",
+        "stat": "STR"
+      }
+    ],
+    "special_effects": [
+      "axe_execution"
+    ],
+    "color": "#D9CB9B",
+    "model_id": "greataxe",
+    "visual": {
+      "style": "greataxe",
+      "color": "#D9CB9B"
+    }
+  },
+  "apprentice_staff": {
+    "id": "apprentice_staff",
+    "name": "学徒法杖",
+    "weapon_type": "Staff",
+    "animation_family": "CASTER",
+    "quality": "Common",
+    "weapon_scaling": 18,
+    "requirements": [
+      {
+        "type": "proficiency",
+        "value": "CASTER"
+      },
+      {
+        "type": "stat",
+        "value": 10,
+        "op": ">=",
+        "stat": "INT"
+      }
+    ],
+    "conditions": [
+      {
+        "type": "proficiency",
+        "value": "CASTER"
+      },
+      {
+        "type": "stat",
+        "value": 10,
+        "op": ">=",
+        "stat": "INT"
+      }
+    ],
+    "special_effects": [
+      "staff_reach"
+    ],
+    "color": "#B582D6",
+    "model_id": "staff",
+    "visual": {
+      "style": "staff",
+      "color": "#B582D6"
+    }
+  },
+  "storm_orb": {
+    "id": "storm_orb",
+    "name": "风暴法球",
+    "weapon_type": "Orb",
+    "animation_family": "CASTER",
+    "quality": "Rare",
+    "weapon_scaling": 22,
+    "requirements": [
+      {
+        "type": "proficiency",
+        "value": "CASTER"
+      },
+      {
+        "type": "stat",
+        "value": 13,
+        "op": ">=",
+        "stat": "INT"
+      }
+    ],
+    "conditions": [
+      {
+        "type": "proficiency",
+        "value": "CASTER"
+      },
+      {
+        "type": "stat",
+        "value": 13,
+        "op": ">=",
+        "stat": "INT"
+      }
+    ],
+    "special_effects": [
+      "storm_piercing"
+    ],
+    "color": "#65DDEB",
+    "model_id": "orb",
+    "visual": {
+      "style": "orb",
+      "color": "#65DDEB"
+    }
+  },
+  "wooden_shield": {
+    "id": "wooden_shield",
+    "name": "木盾",
+    "physical_reduction": 1.0,
+    "elemental_reduction": 0.5,
+    "stamina_cost": 1,
+    "angle": 140,
+    "perfect_window": 0.16,
+    "move_multiplier": 0.35,
+    "compatible_families": [
+      "SINGLE_BLADE",
+      "SHORT_WEAPON",
+      "POLEARM"
+    ],
+    "color": "#A17A4B",
+    "weapon_type": "Shield",
+    "animation_family": "SHIELD",
+    "quality": "Common",
+    "weapon_scaling": 0,
+    "requirements": [],
+    "conditions": [],
+    "special_effects": [],
+    "model_id": "wooden_shield",
+    "visual": {
+      "style": "wooden_shield",
+      "color": "#A17A4B"
+    },
+    "description": "盾牌武器，需要盾牌熟练。士兵以A槽剑、B槽盾同时持有。举盾的短窗口可精准格挡，持续防御与盾后反击按盾牌和动作窗口结算。"
+  },
+  "buckler": {
+    "id": "buckler",
+    "name": "圆盾",
+    "physical_reduction": 0.85,
+    "elemental_reduction": 0.35,
+    "stamina_cost": 1,
+    "angle": 120,
+    "perfect_window": 0.2,
+    "move_multiplier": 0.35,
+    "compatible_families": [
+      "SINGLE_BLADE",
+      "SHORT_WEAPON",
+      "POLEARM"
+    ],
+    "color": "#B3BDC5",
+    "weapon_type": "Shield",
+    "animation_family": "SHIELD",
+    "quality": "Common",
+    "weapon_scaling": 0,
+    "requirements": [],
+    "conditions": [],
+    "special_effects": [],
+    "model_id": "buckler",
+    "visual": {
+      "style": "buckler",
+      "color": "#B3BDC5"
+    },
+    "description": "盾牌武器，需要盾牌熟练。士兵以A槽剑、B槽盾同时持有。举盾的短窗口可精准格挡，持续防御与盾后反击按盾牌和动作窗口结算。"
+  },
+  "iron_greatsword": {
+    "id": "iron_greatsword",
+    "name": "铁制大剑",
+    "weapon_type": "Greatsword",
+    "animation_family": "HEAVY_2H",
+    "quality": "Fine",
+    "weapon_scaling": 38,
+    "requirements": [
+      {
+        "type": "proficiency",
+        "value": "HEAVY_2H"
+      },
+      {
+        "type": "stat",
+        "value": 14,
+        "op": ">=",
+        "stat": "STR"
+      }
+    ],
+    "conditions": [
+      {
+        "type": "proficiency",
+        "value": "HEAVY_2H"
+      },
+      {
+        "type": "stat",
+        "value": 14,
+        "op": ">=",
+        "stat": "STR"
+      }
+    ],
+    "special_effects": [],
+    "color": "#D9CB9B",
+    "model_id": "greatsword",
+    "visual": {
+      "style": "greatsword",
+      "color": "#D9CB9B"
+    },
+    "description": "重型双手大剑。主攻击蓄力65%至85%时出现微白光并可精准格挡；仅窗内松手将防御窗口延续至挥砍开始后0.20秒。早、晚或满蓄松手均无继承窗口。"
+  }
+}

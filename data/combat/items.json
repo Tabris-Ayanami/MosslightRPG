@@ -1,0 +1,81 @@
+{
+  "healing_potion": {
+    "id": "healing_potion",
+    "name": "生命药水",
+    "description": "恢复最大生命的 30%。生命已满时不消耗。",
+    "category": "consumable",
+    "effect": "resource",
+    "resource": "HP",
+    "fraction": 0.3,
+    "cooldown": 4
+  },
+  "qi_potion": {
+    "id": "qi_potion",
+    "name": "大瓶能量药水",
+    "description": "恢复 40 点能量。能量已满或没有能量上限时不消耗。",
+    "category": "consumable",
+    "effect": "resource",
+    "resource": "Energy",
+    "amount": 40,
+    "cooldown": 4
+  },
+  "spell_potion": {
+    "id": "spell_potion",
+    "name": "小瓶能量药水",
+    "description": "恢复 20 点能量。能量已满或没有能量上限时不消耗。",
+    "category": "consumable",
+    "effect": "resource",
+    "resource": "Energy",
+    "amount": 20,
+    "cooldown": 4
+  },
+  "fire_bomb": {
+    "id": "fire_bomb",
+    "name": "火焰炸弹",
+    "description": "向瞄准位置投掷炸弹，造成 150 点火焰范围伤害。",
+    "category": "consumable",
+    "effect": "action",
+    "cooldown": 4,
+    "action": {
+      "id": "item_fire_bomb",
+      "name": "火焰炸弹",
+      "is_skill": false,
+      "is_reaction": true,
+      "presentation_type": "SPELL",
+      "startup": 0.15,
+      "active": 0.1,
+      "recovery": 0.2,
+      "cooldown": 0,
+      "costs": {},
+      "gains": {},
+      "formula": {
+        "base": 150
+      },
+      "damage_type": "FIRE",
+      "targeting": "POINT",
+      "range": 12,
+      "radius": 2.5,
+      "can_crit": false,
+      "conditions": [],
+      "effects": []
+    }
+  },
+  "magic_candy": {
+    "id": "magic_candy",
+    "name": "神奇糖果",
+    "description": "测试物品：直接提升 1 级，不改变当前经验。Lv10 时不消耗。",
+    "category": "consumable",
+    "effect": "level",
+    "cooldown": 0
+  },
+  "wood": {
+    "id": "wood",
+    "name": "木材",
+    "description": "从木梯上拆下的干燥木料，仍带着浅浅的凿痕。可用于建造与修补。",
+    "category": "material",
+    "icon": "wood",
+    "color": "#b69771",
+    "effect": "none",
+    "cooldown": 0
+  }
+}

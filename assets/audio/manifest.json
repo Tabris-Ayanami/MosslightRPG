@@ -1,0 +1,425 @@
+{
+  "sources": {
+    "fantozzi": {
+      "author": "Fantozzi; sliced by qubodup",
+      "license": "CC0-1.0",
+      "url": "https://opengameart.org/content/fantozzis-footsteps-grasssand-stone"
+    },
+    "rubberduck": {
+      "author": "rubberduck",
+      "license": "CC0-1.0",
+      "url": "https://opengameart.org/content/100-cc0-sfx-2"
+    },
+    "kenney": {
+      "author": "Kenney",
+      "license": "CC0-1.0",
+      "url": "https://kenney.nl/assets/rpg-audio"
+    },
+    "birds": {
+      "author": "isaiah658",
+      "license": "CC0-1.0",
+      "url": "https://opengameart.org/content/ambient-bird-sounds"
+    },
+    "crickets": {
+      "author": "dklon",
+      "license": "CC-BY-3.0",
+      "url": "https://opengameart.org/content/crickets"
+    },
+    "exploration": {
+      "author": "Kilua Boy",
+      "license": "CC0-1.0",
+      "url": "https://opengameart.org/content/sunset-walk-ambient-quiet-sweet-loop"
+    },
+    "village": {
+      "author": "bobjt",
+      "license": "CC0-1.0",
+      "url": "https://opengameart.org/content/peacefull-ville"
+    }
+  },
+  "files": [
+    {
+      "file": "footsteps/grass_01.wav",
+      "source": "fantozzi",
+      "original": "Fantozzi-SandL1.flac",
+      "original_sha256": "93a2630579a82507e3c6ceab9b012f71a50cf8922f4beadb14057dcc0636b099",
+      "sha256": "967662a9292356bc495734ceefd3781cb74a7a0e8de22f660d7b16ee6181c3f1",
+      "seconds": 0.4383,
+      "channels": 1,
+      "peak": 0.68002,
+      "rms_db": -27.83,
+      "edits": "mono 44.1 kHz; high-pass; silence trim; RMS/peak gain; 3 ms attack and 20 ms tail fade"
+    },
+    {
+      "file": "footsteps/grass_02.wav",
+      "source": "fantozzi",
+      "original": "Fantozzi-SandL2.flac",
+      "original_sha256": "9bb57478cc96e1410cae27d926aa8d77d5f2d368d9776822f63cf0b37c6d2faf",
+      "sha256": "2e8c71ad238699a02615cee0a193495ec865c795286549e1b7caee26f85f9b83",
+      "seconds": 0.3194,
+      "channels": 1,
+      "peak": 0.67999,
+      "rms_db": -27.08,
+      "edits": "mono 44.1 kHz; high-pass; silence trim; RMS/peak gain; 3 ms attack and 20 ms tail fade"
+    },
+    {
+      "file": "footsteps/grass_03.wav",
+      "source": "fantozzi",
+      "original": "Fantozzi-SandL3.flac",
+      "original_sha256": "042820e65cc947d8bb8adf18524ffff7cdf5fc310f9412cbf8bdf7a139984c21",
+      "sha256": "d5ae14a4d514fc192f0ccc770d0d67c6d31f2c5ddcb468703b04475d33df05eb",
+      "seconds": 0.2995,
+      "channels": 1,
+      "peak": 0.68002,
+      "rms_db": -29.03,
+      "edits": "mono 44.1 kHz; high-pass; silence trim; RMS/peak gain; 3 ms attack and 20 ms tail fade"
+    },
+    {
+      "file": "footsteps/grass_04.wav",
+      "source": "fantozzi",
+      "original": "Fantozzi-SandR1.flac",
+      "original_sha256": "3514d12f3369297233e915814364ed02902003d4103b010371c2ac15c2aa48fe",
+      "sha256": "aa048c8718564236f1ee2b0b925859bb4c286f11df89a16832bd9b095d9e98bc",
+      "seconds": 0.4028,
+      "channels": 1,
+      "peak": 0.67999,
+      "rms_db": -29.05,
+      "edits": "mono 44.1 kHz; high-pass; silence trim; RMS/peak gain; 3 ms attack and 20 ms tail fade"
+    },
+    {
+      "file": "footsteps/grass_05.wav",
+      "source": "fantozzi",
+      "original": "Fantozzi-SandR2.flac",
+      "original_sha256": "0356f659313887f01a9f21fd5bedf57a77073d0d74d57b5621279ee453a80f3c",
+      "sha256": "caa416fa7f184c2753c9beb881b3edb243d6f2fbef232aa8456492894c648ca3",
+      "seconds": 0.3402,
+      "channels": 1,
+      "peak": 0.68002,
+      "rms_db": -28.95,
+      "edits": "mono 44.1 kHz; high-pass; silence trim; RMS/peak gain; 3 ms attack and 20 ms tail fade"
+    },
+    {
+      "file": "footsteps/grass_06.wav",
+      "source": "fantozzi",
+      "original": "Fantozzi-SandR3.flac",
+      "original_sha256": "7535306b6ff3b9e071256f12789eb53fb90769a913ff7e00b271298727e0f521",
+      "sha256": "2bc601e40aaed364fba80bccd9140e6d1cb77288f8f201ceaebd9146f9fdf75e",
+      "seconds": 0.3295,
+      "channels": 1,
+      "peak": 0.68002,
+      "rms_db": -25.21,
+      "edits": "mono 44.1 kHz; high-pass; silence trim; RMS/peak gain; 3 ms attack and 20 ms tail fade"
+    },
+    {
+      "file": "footsteps/stone_01.wav",
+      "source": "fantozzi",
+      "original": "Fantozzi-StoneL1.flac",
+      "original_sha256": "7cfa4a2f500ae2bd19a961022296611d837c34ca2e556fe68deb692388f49971",
+      "sha256": "664951f5878ce8a32a7be695e17825a496fbe9c3d9e3d04e7ea3c7e821c8c177",
+      "seconds": 0.3681,
+      "channels": 1,
+      "peak": 0.67545,
+      "rms_db": -23.74,
+      "edits": "mono 44.1 kHz; high-pass; silence trim; RMS/peak gain; 3 ms attack and 20 ms tail fade"
+    },
+    {
+      "file": "footsteps/stone_02.wav",
+      "source": "fantozzi",
+      "original": "Fantozzi-StoneL2.flac",
+      "original_sha256": "dcbd6be44af4b3206daa36c5398035ca527bb057c51ce00482b9ca6356be2468",
+      "sha256": "a0933d331f8a81a6702d578318aa8d72e7d1cfba5d2696d152b1eb8c0a0aadb5",
+      "seconds": 0.3316,
+      "channels": 1,
+      "peak": 0.62558,
+      "rms_db": -23.74,
+      "edits": "mono 44.1 kHz; high-pass; silence trim; RMS/peak gain; 3 ms attack and 20 ms tail fade"
+    },
+    {
+      "file": "footsteps/stone_03.wav",
+      "source": "fantozzi",
+      "original": "Fantozzi-StoneL3.flac",
+      "original_sha256": "37a25f4254cf8f2e56d271912b0569f3bb15c57bf3fde9de492466eb23853b0d",
+      "sha256": "43929300d7ecb725151bd29d44d2fb6d0dd351add77e9351ab7462d15eb790d9",
+      "seconds": 0.3309,
+      "channels": 1,
+      "peak": 0.56384,
+      "rms_db": -23.74,
+      "edits": "mono 44.1 kHz; high-pass; silence trim; RMS/peak gain; 3 ms attack and 20 ms tail fade"
+    },
+    {
+      "file": "footsteps/stone_04.wav",
+      "source": "fantozzi",
+      "original": "Fantozzi-StoneR1.flac",
+      "original_sha256": "7073bddd2e3ba432e15a83844180c0ebc52835c2c6bab0fa902ee5952499c729",
+      "sha256": "911f3b0ce32175a80313c607fd69bdde97bcb1e00bbeb3cb404d00169ff145cf",
+      "seconds": 0.3567,
+      "channels": 1,
+      "peak": 0.67999,
+      "rms_db": -24.53,
+      "edits": "mono 44.1 kHz; high-pass; silence trim; RMS/peak gain; 3 ms attack and 20 ms tail fade"
+    },
+    {
+      "file": "footsteps/stone_05.wav",
+      "source": "fantozzi",
+      "original": "Fantozzi-StoneR2.flac",
+      "original_sha256": "d66330b4a32e93b0dfdcb8c53667654de8702a0fa48b2d06c48d94dc66b3e1cc",
+      "sha256": "4d62ecd158e0a14d373420fb7f21f5eb24bb40623f60f9546d6dc0a2460672c9",
+      "seconds": 0.3207,
+      "channels": 1,
+      "peak": 0.56528,
+      "rms_db": -23.74,
+      "edits": "mono 44.1 kHz; high-pass; silence trim; RMS/peak gain; 3 ms attack and 20 ms tail fade"
+    },
+    {
+      "file": "footsteps/stone_06.wav",
+      "source": "fantozzi",
+      "original": "Fantozzi-StoneR3.flac",
+      "original_sha256": "b98f2c4b932242739ce8687206f7eb3313ce30afd4af7b7e148507c5cbd26787",
+      "sha256": "8c37dc017f0533a4ef472c2f5ba705e6f1216acfd41fb239b601829f83cb6dfc",
+      "seconds": 0.3421,
+      "channels": 1,
+      "peak": 0.61276,
+      "rms_db": -23.74,
+      "edits": "mono 44.1 kHz; high-pass; silence trim; RMS/peak gain; 3 ms attack and 20 ms tail fade"
+    },
+    {
+      "file": "footsteps/water_01.wav",
+      "source": "rubberduck",
+      "original": "sfx100v2_footstep_wet_01.ogg",
+      "original_sha256": "c2663b62fc7239972c044719b95daec4004976fc9bd0a1678c06170d99a3d408",
+      "sha256": "b02d4b79dff195d2474af49509e98aeb46ee16c4f29174217251027a99986da2",
+      "seconds": 0.2536,
+      "channels": 1,
+      "peak": 0.67999,
+      "rms_db": -24.08,
+      "edits": "mono 44.1 kHz; high-pass; silence trim; RMS/peak gain; 3 ms attack and 20 ms tail fade"
+    },
+    {
+      "file": "footsteps/water_02.wav",
+      "source": "rubberduck",
+      "original": "sfx100v2_footstep_wet_02.ogg",
+      "original_sha256": "b2cfbdd75ee970dcb68cc157fec818eda2f5802989b0da684aa67817cb914b52",
+      "sha256": "d7f53690b9ded6bae89670f7ea5755f2ee93043922a8397613850530739a3d92",
+      "seconds": 0.3631,
+      "channels": 1,
+      "peak": 0.63242,
+      "rms_db": -23.74,
+      "edits": "mono 44.1 kHz; high-pass; silence trim; RMS/peak gain; 3 ms attack and 20 ms tail fade"
+    },
+    {
+      "file": "footsteps/water_03.wav",
+      "source": "rubberduck",
+      "original": "sfx100v2_footstep_wet_03.ogg",
+      "original_sha256": "4d475dd54d72a862cb72fcff4d1970161e619352f500f8b75755a2f5e987513e",
+      "sha256": "3e6dc3365a4d08a01da30051a783e5d4b1834b8ac597f90b7f945875dffd1b10",
+      "seconds": 0.3474,
+      "channels": 1,
+      "peak": 0.67999,
+      "rms_db": -24.48,
+      "edits": "mono 44.1 kHz; high-pass; silence trim; RMS/peak gain; 3 ms attack and 20 ms tail fade"
+    },
+    {
+      "file": "footsteps/wood_01.wav",
+      "source": "rubberduck",
+      "original": "sfx100v2_footstep_wood_01.ogg",
+      "original_sha256": "52465eeb853a8fa3cd9f4e218dc0b28bdcb3bb52da72f5bece5d47cae2523a20",
+      "sha256": "f0513228cb2b0f661cade202981dc46e3310ed4337f16b47314bc7a4ee450903",
+      "seconds": 0.2161,
+      "channels": 1,
+      "peak": 0.33502,
+      "rms_db": -23.74,
+      "edits": "mono 44.1 kHz; high-pass; silence trim; RMS/peak gain; 3 ms attack and 20 ms tail fade"
+    },
+    {
+      "file": "footsteps/wood_02.wav",
+      "source": "rubberduck",
+      "original": "sfx100v2_footstep_wood_02.ogg",
+      "original_sha256": "e6c35ceaabd50775ba222d8c9566e807b876debf066443626a0a4906849982d4",
+      "sha256": "dae4dea26a5de04e9869192b675844e116ed58afaa2f9b0c292c792a8928d579",
+      "seconds": 0.2204,
+      "channels": 1,
+      "peak": 0.3457,
+      "rms_db": -23.74,
+      "edits": "mono 44.1 kHz; high-pass; silence trim; RMS/peak gain; 3 ms attack and 20 ms tail fade"
+    },
+    {
+      "file": "footsteps/wood_03.wav",
+      "source": "rubberduck",
+      "original": "sfx100v2_footstep_wood_03.ogg",
+      "original_sha256": "c02fd155ca74ece4e5c9992f1d48c615bc768b0a8c712423d7091bc0f1207d4c",
+      "sha256": "9ee76193fdcc65798a91a90edb01cffcf3a03943f25cf60ab23c884e69e61a04",
+      "seconds": 0.1305,
+      "channels": 1,
+      "peak": 0.67999,
+      "rms_db": -25.7,
+      "edits": "mono 44.1 kHz; high-pass; silence trim; RMS/peak gain; 3 ms attack and 20 ms tail fade"
+    },
+    {
+      "file": "footsteps/wood_04.wav",
+      "source": "rubberduck",
+      "original": "sfx100v2_footstep_wood_04.ogg",
+      "original_sha256": "d229d313dc89c5c1d337f2f348d75822695530832fd10469595a3d37c53118ab",
+      "sha256": "6b8760cb79e79f576fa0e3931deea7107df0d071eb9c386d98c8f731f1df6e0e",
+      "seconds": 0.2401,
+      "channels": 1,
+      "peak": 0.68002,
+      "rms_db": -25.06,
+      "edits": "mono 44.1 kHz; high-pass; silence trim; RMS/peak gain; 3 ms attack and 20 ms tail fade"
+    },
+    {
+      "file": "footsteps/dirt_01.wav",
+      "source": "rubberduck",
+      "original": "sfx100v2_footstep_01.ogg",
+      "original_sha256": "007a96c62d6c335df0d292bdc5cf44fef768b7e2f14378759d03673be6be7ec6",
+      "sha256": "b7e83cc996b1aa0fd7dd58aae1e98bb0d4777b12858bba83ad611f99182496cf",
+      "seconds": 0.286,
+      "channels": 1,
+      "peak": 0.57819,
+      "rms_db": -23.74,
+      "edits": "mono 44.1 kHz; high-pass; silence trim; RMS/peak gain; 3 ms attack and 20 ms tail fade"
+    },
+    {
+      "file": "footsteps/dirt_02.wav",
+      "source": "rubberduck",
+      "original": "sfx100v2_footstep_02.ogg",
+      "original_sha256": "8b478a7245bbe358fcddaa5047f8f4e29c8eca52ff79c25d489b5f378747228c",
+      "sha256": "e30a6ab003eed7ea9cd0847331929ce74f5bc13a40d4644bb253b557a43c8256",
+      "seconds": 0.2891,
+      "channels": 1,
+      "peak": 0.65054,
+      "rms_db": -23.74,
+      "edits": "mono 44.1 kHz; high-pass; silence trim; RMS/peak gain; 3 ms attack and 20 ms tail fade"
+    },
+    {
+      "file": "ambience/water.ogg",
+      "source": "rubberduck",
+      "original": "sfx100v2_loop_water_01.ogg",
+      "original_sha256": "955a367cf87f150f7868e2ecf5745ef13cec2c78a29304eda27e74f1fea06c57",
+      "sha256": "eb9a46354ffcfb0bd6b692ba170d6a58831c54abe5b6d9c5b49ac5544d64dba5",
+      "seconds": 6.1472,
+      "channels": 2,
+      "peak": 0.68012,
+      "rms_db": -16.84,
+      "edits": "44.1 kHz; high-pass 100 Hz; 0.22s wrap crossfade; RMS/peak gain; OGG Vorbis"
+    },
+    {
+      "file": "ambience/birds.ogg",
+      "source": "birds",
+      "original": "birds.ogg",
+      "original_sha256": "359e4e3f9da9d75aac64cede511c7e3ef8b461f9d9f8c230f8f80e44c4b3e35f",
+      "sha256": "c420824c2f683f4bf92c5014957b3cd1b14abc8ea2e8304ee4671e019ac49590",
+      "seconds": 29.4883,
+      "channels": 2,
+      "peak": 0.71264,
+      "rms_db": -27.55,
+      "edits": "44.1 kHz; high-pass 200 Hz; 1.2s wrap crossfade; RMS/peak gain; OGG Vorbis"
+    },
+    {
+      "file": "ambience/crickets.ogg",
+      "source": "crickets",
+      "original": "crickets.mp3",
+      "original_sha256": "90cc63e7f9aef02d2c3bee846639bd3884018a1ad1279b1faff6cb79246eb176",
+      "sha256": "76b3eb0da535e6303072cb84000066927416b9ea6028d9ea196e62af93a9e97d",
+      "seconds": 17.5001,
+      "channels": 2,
+      "peak": 0.66033,
+      "rms_db": -24.7,
+      "edits": "44.1 kHz; high-pass 400 Hz; 1.0s wrap crossfade; RMS/peak gain; OGG Vorbis"
+    },
+    {
+      "file": "music/exploration.ogg",
+      "source": "exploration",
+      "original": "exploration.ogg",
+      "original_sha256": "1d230721e6200276065b913e44943d0e0503af88fc2dd793be1249738e06d98c",
+      "sha256": "7c70e59d6d83bcbfda6fdfeb9c37c8efac8559fc9fa8896a4bc46ffe771eb4e5",
+      "seconds": 76.785,
+      "channels": 2,
+      "peak": 0.70478,
+      "rms_db": -21.65,
+      "edits": "44.1 kHz; high-pass 30 Hz; 0.015s wrap crossfade; RMS/peak gain; OGG Vorbis"
+    },
+    {
+      "file": "music/village.ogg",
+      "source": "village",
+      "original": "village.ogg",
+      "original_sha256": "605d3dc2f3beec1c157e1ec7b0283a70a0976b15f04b18918f8b3f8fd9da5d07",
+      "sha256": "683cfa3a428d16cea5632a84068404020f7860bef7df834cf1c5370203840035",
+      "seconds": 30.1421,
+      "channels": 2,
+      "peak": 0.68616,
+      "rms_db": -20.73,
+      "edits": "44.1 kHz; high-pass 30 Hz; 0.015s wrap crossfade; RMS/peak gain; OGG Vorbis"
+    },
+    {
+      "file": "effects/cloth1.wav",
+      "source": "kenney",
+      "original": "cloth1.ogg",
+      "original_sha256": "ddb93a3671233f95da0e0b10367f082f7eb42fa6caaddcf776410aa8833c747d",
+      "sha256": "da694c24a5735c69abde5c98b380b6feb5abf158a4e961ce32aeee1716166c52",
+      "seconds": 0.5105,
+      "channels": 1,
+      "peak": 0.67999,
+      "rms_db": -25.68,
+      "edits": "mono 44.1 kHz; high-pass; silence trim; RMS/peak gain; 3 ms attack and 20 ms tail fade"
+    },
+    {
+      "file": "effects/cloth2.wav",
+      "source": "kenney",
+      "original": "cloth2.ogg",
+      "original_sha256": "8a7451193c38bc05483aec25dd193e163a15d44cf7fff04ac7912573231b0201",
+      "sha256": "779db7b7167d1699669d620467d309963b26fafb5a41726c7a9838ae2223c251",
+      "seconds": 0.3262,
+      "channels": 1,
+      "peak": 0.67999,
+      "rms_db": -22.56,
+      "edits": "mono 44.1 kHz; high-pass; silence trim; RMS/peak gain; 3 ms attack and 20 ms tail fade"
+    },
+    {
+      "file": "effects/cloth3.wav",
+      "source": "kenney",
+      "original": "cloth3.ogg",
+      "original_sha256": "a48632d17a4f1416541d261a32a31612e01267144c407fa3ecab3ff410f0085b",
+      "sha256": "af8402598e968c6a9c3216d1f5adc821b458d1893b5efcfb4851a84e1177a3e2",
+      "seconds": 0.44,
+      "channels": 1,
+      "peak": 0.67999,
+      "rms_db": -22.94,
+      "edits": "mono 44.1 kHz; high-pass; silence trim; RMS/peak gain; 3 ms attack and 20 ms tail fade"
+    },
+    {
+      "file": "effects/cloth4.wav",
+      "source": "kenney",
+      "original": "cloth4.ogg",
+      "original_sha256": "e7ab9a6c4466dea874196c61f59bf1da05cfe58748f42fadd695d441a154a99b",
+      "sha256": "7712ddbdf9106a2f79bc8f159d323d82a40810cd66c9cf3fa52526b052ad811b",
+      "seconds": 0.3844,
+      "channels": 1,
+      "peak": 0.67999,
+      "rms_db": -22.78,
+      "edits": "mono 44.1 kHz; high-pass; silence trim; RMS/peak gain; 3 ms attack and 20 ms tail fade"
+    },
+    {
+      "file": "effects/knifeSlice.wav",
+      "source": "kenney",
+      "original": "knifeSlice.ogg",
+      "original_sha256": "4cd96dc630bed9840c15f1dd2306da2cc56a4da26a5d3f1a03c5a7265ac5e54f",
+      "sha256": "f938f2232e78cd6a5069530e7e0a707b79207140cd8ecdea957e291e26eeb586",
+      "seconds": 0.3551,
+      "channels": 1,
+      "peak": 0.67999,
+      "rms_db": -20.23,
+      "edits": "mono 44.1 kHz; high-pass; silence trim; RMS/peak gain; 3 ms attack and 20 ms tail fade"
+    },
+    {
+      "file": "effects/knifeSlice2.wav",
+      "source": "kenney",
+      "original": "knifeSlice2.ogg",
+      "original_sha256": "6c2064d0ef988d1ec3d56868e823ea8823a5cac00f2742560052633529407def",
+      "sha256": "ab13adb30a9db3be8f7fe0e43e01031a0d0143af6962900367fd522f71181723",
+      "seconds": 0.4344,
+      "channels": 1,
+      "peak": 0.67999,
+      "rms_db": -21.76,
+      "edits": "mono 44.1 kHz; high-pass; silence trim; RMS/peak gain; 3 ms attack and 20 ms tail fade"
+    }
+  ]
+}

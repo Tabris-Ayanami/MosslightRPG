@@ -1,0 +1,14 @@
+{
+  "model": "F:\\demo\\crpg\\SourceAssets\\ThirdParty\\KiritoPackage\\reference\\Assets\\SubspaceHunter\\Model\\桐人\\kirito2.fbx",
+  "rig": "F:\\demo\\crpg\\SourceAssets\\Characters\\LowPoly\\Kirito_LowPoly.blend",
+  "textures": {
+    "shen_ti": "shen_ti_basecolor.png",
+    "fushi1": "bake_fushi1_albedometal.png",
+    "fu_shi2": "bake_fu_shi2_albedometal.png",
+    "tou": "tou_2D_View.png",
+    "hair": "hair_2D_View.png"
+  },
+  "animations": "Locally authored prototype skeletal clips; not original SAO animations.",
+  "source_license": "User-provided third-party source. Redistribution terms not verified.",
+  "triangles": 24672
+}

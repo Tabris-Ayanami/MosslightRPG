@@ -1,0 +1,13 @@
+[gd_resource type="ShaderMaterial" format=3]
+
+[ext_resource type="Shader" path="res://shaders/earth_path.gdshader" id="1_55urp"]
+
+[resource]
+render_priority = 0
+shader = ExtResource("1_55urp")
+shader_parameter/earth = null
+shader_parameter/packed_earth = null
+shader_parameter/dry_grit = null
+shader_parameter/ribbon = true
+shader_parameter/plaza_center = null
+shader_parameter/plaza_radius = null

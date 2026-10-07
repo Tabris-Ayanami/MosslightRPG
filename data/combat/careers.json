@@ -1,0 +1,486 @@
+{
+  "warrior": {
+    "id": "warrior",
+    "name": "战士",
+    "base_career": "warrior",
+    "required_level": 1,
+    "max_level": 20,
+    "stats": {
+      "STR": 13,
+      "DEX": 11,
+      "CON": 13,
+      "INT": 8,
+      "PER": 10,
+      "CHA": 9
+    },
+    "formulas": {
+      "HP": "680 + CON * 30 + 50 * (level - 1)",
+      "Stamina": "3 + floor(max(0, CON - 10) / 4) + floor(0.05 * (level - 1) * (level - 1) + 0.4 * (level - 1))",
+      "Poise": "60 + CON * 3",
+      "Energy": "20 * (2 + floor((STR + CON - 20) / 6)) + 10 * floor((9 * (level - 1) + 0.6 * (level - 1) * (level - 1)) / 10.0)"
+    },
+    "proficiencies": [
+      "SINGLE_BLADE",
+      "SHORT_WEAPON"
+    ],
+    "weapon_proficiencies": [
+      "SINGLE_BLADE",
+      "SHORT_WEAPON"
+    ],
+    "next_careers": [
+      "swordsman",
+      "duelist",
+      "soldier"
+    ],
+    "skills": [
+      "warrior_whirlwind",
+      "warrior_thrust",
+      "warrior_impact",
+      "warrior_sword_wave"
+    ],
+    "passives": [],
+    "default_sets": [
+      {
+        "weapon": "iron_longsword",
+        "skills": [
+          "warrior_whirlwind",
+          "warrior_thrust",
+          "warrior_sword_wave"
+        ]
+      },
+      {
+        "weapon": "hunter_dagger",
+        "skills": [
+          "warrior_whirlwind",
+          "warrior_thrust",
+          "warrior_impact"
+        ]
+      }
+    ]
+  },
+  "rogue": {
+    "id": "rogue",
+    "name": "游荡者",
+    "base_career": "rogue",
+    "required_level": 1,
+    "max_level": 20,
+    "stats": {
+      "STR": 9,
+      "DEX": 14,
+      "CON": 10,
+      "INT": 10,
+      "PER": 13,
+      "CHA": 10
+    },
+    "formulas": {
+      "HP": "600 + CON * 24 + 45 * (level - 1)",
+      "Stamina": "3 + floor(max(0, CON - 10) / 4) + floor(0.05 * (level - 1) * (level - 1) + 0.4 * (level - 1)) + floor(max(0, DEX - 10) / 5)",
+      "Poise": "45 + CON * 2.5",
+      "Energy": "20 * (2 + floor((DEX + PER - 20) / 6)) + 10 * floor((9 * (level - 1) + 0.6 * (level - 1) * (level - 1)) / 10.0)"
+    },
+    "proficiencies": [
+      "BOW",
+      "SHORT_WEAPON"
+    ],
+    "weapon_proficiencies": [
+      "BOW",
+      "SHORT_WEAPON"
+    ],
+    "next_careers": [
+      "shadowblade",
+      "ranger"
+    ],
+    "skills": [
+      "rogue_shadow_strike",
+      "rogue_precision_shot",
+      "rogue_smoke",
+      "rogue_throwing_blade"
+    ],
+    "passives": [
+      "first_strike"
+    ],
+    "default_sets": [
+      {
+        "weapon": "hunter_dagger",
+        "skills": [
+          "rogue_shadow_strike",
+          "rogue_throwing_blade",
+          "rogue_smoke"
+        ]
+      },
+      {
+        "weapon": "shortbow",
+        "skills": [
+          "rogue_precision_shot",
+          "rogue_smoke",
+          "rogue_precision_shot"
+        ]
+      }
+    ]
+  },
+  "barbarian": {
+    "id": "barbarian",
+    "name": "狂蛮",
+    "base_career": "barbarian",
+    "required_level": 1,
+    "max_level": 20,
+    "stats": {
+      "STR": 15,
+      "DEX": 9,
+      "CON": 14,
+      "INT": 7,
+      "PER": 10,
+      "CHA": 8
+    },
+    "formulas": {
+      "HP": "760 + CON * 34 + 60 * (level - 1)",
+      "Stamina": "3 + floor(max(0, CON - 10) / 4) + floor(0.05 * (level - 1) * (level - 1) + 0.4 * (level - 1))",
+      "Poise": "75 + CON * 4",
+      "Energy": "20 * (2 + floor((STR + CON - 20) / 4)) + 10 * floor((9 * (level - 1) + 0.6 * (level - 1) * (level - 1)) / 10.0)"
+    },
+    "proficiencies": [
+      "POLEARM",
+      "HEAVY_2H"
+    ],
+    "weapon_proficiencies": [
+      "POLEARM",
+      "HEAVY_2H"
+    ],
+    "next_careers": [
+      "berserker",
+      "vanguard"
+    ],
+    "skills": [
+      "barbarian_leap",
+      "barbarian_fan_slash",
+      "barbarian_blood_rage",
+      "barbarian_impact"
+    ],
+    "passives": [
+      "last_stand"
+    ],
+    "default_sets": [
+      {
+        "weapon": "bone_greataxe",
+        "skills": [
+          "barbarian_leap",
+          "barbarian_fan_slash",
+          "barbarian_blood_rage"
+        ]
+      },
+      {
+        "weapon": "border_spear",
+        "skills": [
+          "barbarian_leap",
+          "barbarian_impact",
+          "barbarian_blood_rage"
+        ]
+      }
+    ]
+  },
+  "mage": {
+    "id": "mage",
+    "name": "法师",
+    "base_career": "mage",
+    "required_level": 1,
+    "max_level": 20,
+    "stats": {
+      "STR": 7,
+      "DEX": 10,
+      "CON": 9,
+      "INT": 14,
+      "PER": 12,
+      "CHA": 11
+    },
+    "formulas": {
+      "HP": "540 + CON * 20 + 35 * (level - 1)",
+      "Stamina": "2 + floor(max(0, CON - 10) / 4) + floor(max(0, DEX - 10) / 6) + floor(0.02 * (level - 1) * (level - 1) + 0.18 * (level - 1))",
+      "Poise": "35 + CON * 2",
+      "Energy": "20 * (2 + floor((INT - 10) / 3)) + 10 * floor((10 * (level - 1) + 1.8 * (level - 1) * (level - 1)) / 10.0)"
+    },
+    "proficiencies": [
+      "CASTER"
+    ],
+    "weapon_proficiencies": [
+      "CASTER"
+    ],
+    "next_careers": [
+      "evoker",
+      "conjurer"
+    ],
+    "skills": [
+      "mage_fireball",
+      "mage_lightning",
+      "mage_earth_spike",
+      "mage_shield"
+    ],
+    "passives": [],
+    "default_sets": [
+      {
+        "weapon": "apprentice_staff",
+        "skills": [
+          "mage_fireball",
+          "mage_lightning",
+          "mage_shield"
+        ]
+      },
+      {
+        "weapon": "storm_orb",
+        "skills": [
+          "mage_earth_spike",
+          "mage_lightning",
+          "mage_shield"
+        ]
+      }
+    ]
+  },
+  "swordsman": {
+    "id": "swordsman",
+    "name": "剑士",
+    "parent_career": "warrior",
+    "base_career": "warrior",
+    "required_level": 2,
+    "max_level": 20,
+    "stats": {},
+    "formulas": {},
+    "proficiencies": [],
+    "weapon_proficiencies": [],
+    "next_careers": [
+      "dual_swordsman"
+    ],
+    "skills": [
+      "swordsman_fan_slash"
+    ],
+    "passives": [
+      "sword_saint",
+      "sword_momentum"
+    ],
+    "default_sets": []
+  },
+  "duelist": {
+    "id": "duelist",
+    "name": "决斗者",
+    "parent_career": "warrior",
+    "base_career": "warrior",
+    "required_level": 2,
+    "max_level": 20,
+    "stats": {},
+    "formulas": {},
+    "proficiencies": [],
+    "weapon_proficiencies": [],
+    "next_careers": [],
+    "skills": [
+      "duelist_finisher",
+      "duelist_fujian"
+    ],
+    "passives": [
+      "reversal"
+    ],
+    "default_sets": [],
+    "preferred_skill": "duelist_fujian"
+  },
+  "shadowblade": {
+    "id": "shadowblade",
+    "name": "影刃",
+    "parent_career": "rogue",
+    "base_career": "rogue",
+    "required_level": 2,
+    "max_level": 20,
+    "stats": {},
+    "formulas": {},
+    "proficiencies": [],
+    "weapon_proficiencies": [],
+    "next_careers": [],
+    "skills": [
+      "shadowblade_execute"
+    ],
+    "passives": [
+      "shadow_assassin",
+      "shadow_escape"
+    ],
+    "default_sets": []
+  },
+  "ranger": {
+    "id": "ranger",
+    "name": "游侠",
+    "parent_career": "rogue",
+    "base_career": "rogue",
+    "required_level": 2,
+    "max_level": 20,
+    "stats": {},
+    "formulas": {},
+    "proficiencies": [],
+    "weapon_proficiencies": [],
+    "next_careers": [],
+    "skills": [
+      "ranger_piercing_arrow",
+      "ranger_arrow_rain"
+    ],
+    "passives": [
+      "eagle_eye"
+    ],
+    "default_sets": []
+  },
+  "berserker": {
+    "id": "berserker",
+    "name": "狂战士",
+    "parent_career": "barbarian",
+    "base_career": "barbarian",
+    "required_level": 2,
+    "max_level": 20,
+    "stats": {},
+    "formulas": {},
+    "proficiencies": [],
+    "weapon_proficiencies": [],
+    "next_careers": [],
+    "skills": [
+      "berserker_quake"
+    ],
+    "passives": [
+      "battle_sustain",
+      "unyielding_rage"
+    ],
+    "default_sets": []
+  },
+  "vanguard": {
+    "id": "vanguard",
+    "name": "破阵者",
+    "parent_career": "barbarian",
+    "base_career": "barbarian",
+    "required_level": 2,
+    "max_level": 20,
+    "stats": {},
+    "formulas": {},
+    "proficiencies": [],
+    "weapon_proficiencies": [],
+    "next_careers": [],
+    "skills": [
+      "vanguard_launch",
+      "vanguard_piercing_thrust"
+    ],
+    "passives": [],
+    "default_sets": []
+  },
+  "evoker": {
+    "id": "evoker",
+    "name": "塑能师",
+    "parent_career": "mage",
+    "base_career": "mage",
+    "required_level": 2,
+    "max_level": 20,
+    "stats": {},
+    "formulas": {},
+    "proficiencies": [],
+    "weapon_proficiencies": [],
+    "next_careers": [],
+    "skills": [
+      "evoker_ice_storm",
+      "evoker_fire_wall",
+      "evoker_earthquake"
+    ],
+    "passives": [
+      "evocation_mastery",
+      "elemental_overload"
+    ],
+    "default_sets": []
+  },
+  "conjurer": {
+    "id": "conjurer",
+    "name": "咒法师",
+    "parent_career": "mage",
+    "base_career": "mage",
+    "required_level": 2,
+    "max_level": 20,
+    "stats": {},
+    "formulas": {},
+    "proficiencies": [],
+    "weapon_proficiencies": [],
+    "next_careers": [],
+    "skills": [
+      "conjurer_bind",
+      "conjurer_blink",
+      "conjurer_chain_lightning",
+      "conjurer_dreamwalk"
+    ],
+    "passives": [
+      "hex_binding"
+    ],
+    "default_sets": []
+  },
+  "soldier": {
+    "id": "soldier",
+    "name": "士兵",
+    "parent_career": "warrior",
+    "base_career": "warrior",
+    "required_level": 2,
+    "max_level": 20,
+    "stats": {},
+    "formulas": {},
+    "proficiencies": [
+      "SHIELD"
+    ],
+    "weapon_proficiencies": [
+      "SHIELD"
+    ],
+    "next_careers": [],
+    "skills": [],
+    "passives": [],
+    "loadout_rule": "sword_shield_pair",
+    "description": "战士的二阶职业。A槽装备剑或刀，B槽装备盾；两槽同时持有并形成剑盾特殊武技，各自保留三项备战技能。",
+    "default_sets": [
+      {
+        "weapon": "iron_longsword",
+        "skills": [
+          "warrior_whirlwind",
+          "warrior_thrust",
+          "warrior_sword_wave"
+        ]
+      },
+      {
+        "weapon": "wooden_shield",
+        "skills": [
+          "warrior_impact",
+          "warrior_thrust",
+          "warrior_whirlwind"
+        ]
+      }
+    ]
+  },
+  "dual_swordsman": {
+    "id": "dual_swordsman",
+    "name": "二刀流",
+    "parent_career": "swordsman",
+    "base_career": "warrior",
+    "required_level": 10,
+    "max_level": 20,
+    "stats": {},
+    "formulas": {},
+    "proficiencies": [],
+    "weapon_proficiencies": [],
+    "next_careers": [],
+    "skills": [],
+    "passives": [
+      "dual_sword_mastery"
+    ],
+    "loadout_rule": "dual_sword_pair",
+    "description": "剑士10级可进阶为二刀流。A/B两槽各装备一把剑或刀，可以使用同型号武器；同时持有两剑，各组保留三项备战技能。剑武技和剑技由左剑、右剑连续发动，各自造成完整伤害；回旋斩两轮，前刺只突进一次再刺两下。费用与冷却按一次施放计算。",
+    "default_sets": [
+      {
+        "weapon": "iron_longsword",
+        "skills": [
+          "swordsman_fan_slash",
+          "warrior_thrust",
+          "warrior_sword_wave"
+        ]
+      },
+      {
+        "weapon": "azure_katana",
+        "skills": [
+          "warrior_whirlwind",
+          "swordsman_fan_slash",
+          "warrior_impact"
+        ]
+      }
+    ]
+  }
+}

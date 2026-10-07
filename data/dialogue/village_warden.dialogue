@@ -1,0 +1,73 @@
+~ start
+if not has_career()
+	守望人·艾琳: 你是从水庭来的旅人吧？先在角色书页里选一条适合自己的道路。
+	守望人·艾琳: 选好职业后，去技能页学习招式，再放进备战栏。武器推荐不会替你学会技能，准备好后再来找我。
+	=> END
+if quest_status("village_patrol") == "available"
+	守望人·艾琳: 东桥那边出现了游荡的士兵。运粮的车已经两天没有进村了。
+	守望人·艾琳: 能替我们巡视林间的路吗？先在水庭练习普攻与闪避，学会的招式要放进备战栏；受伤时用快捷药水。
+	- 我去看看。
+		do accept_quest("village_patrol")
+		if last_operation_ok
+			if quest_status("village_patrol") == "ready"
+				守望人·艾琳: 原来你已经击败了士兵！再与我交谈，就能汇报巡路结果。
+			else
+				守望人·艾琳: 从村南的桥回到水庭，再向东过桥就是林间小路。击败那里的士兵后，回来向我汇报。
+			守望人·艾琳: 苔光记录石可以恢复状态，药水也替你备好了。路线已记在日志里。
+		else
+			守望人·艾琳: {{last_error}}
+	- 我还需要准备一下。
+		守望人·艾琳: 村子会等你。别急着走进敌人的包围里。
+	=> END
+if quest_status("village_patrol") == "active"
+	守望人·艾琳: 从村南的桥回到水庭，再向东过桥就是林间小路。
+	守望人·艾琳: 巡路回来后告诉我结果。受了伤就先休息。
+	=> END
+if quest_status("village_patrol") == "ready"
+	守望人·艾琳: 看来东桥的路已经安全一些了。
+	- 汇报巡路结果。
+		do claim_quest("village_patrol")
+		if last_operation_ok
+			守望人·艾琳: 做得好。这些补给是村里的一点谢意。
+		else
+			守望人·艾琳: {{last_error}}
+	- 稍后再来。
+		守望人·艾琳: 好，我会守在这里。
+	=> END
+if quest_status("forest_investigation") == "available"
+	守望人·艾琳: 还有一件事。林子深处传来的脚步声，比士兵沉重得多。
+	守望人·艾琳: 先击败林间的重甲守卫，再向东北的空地寻找林地暴君。火元素和路旁的补给箱可以自行探索，不是这次委托的条件。
+	- 我会清查林中的威胁。
+		do accept_quest("forest_investigation")
+		if last_operation_ok
+			守望人·艾琳: 重甲守卫倒下后，通往暴君的路才会显露。小心红光抓取，举盾也拦不住；看清预警后闪避。
+		else
+			守望人·艾琳: {{last_error}}
+	- 等我整理好装备。
+		守望人·艾琳: 先把学会的招式放进备战栏，再出发吧。
+	=> END
+if quest_status("forest_investigation") == "active"
+	if chapter_phase() == "final_challenge"
+		守望人·艾琳: 重甲守卫的威胁已经解除。现在沿林地向东北走，暴君独自守在更深的空地。
+		守望人·艾琳: 它的横扫能格挡，红光抓取要闪避。取胜后回来，我们一起为这段旅途收个尾。
+	else
+		守望人·艾琳: 先清除林间的重甲守卫，再去寻找更深处的暴君。
+		守望人·艾琳: 如果已经提前击败过暴君，委托会保留这次接取后的战果，不必重复证明。
+	=> END
+if quest_status("forest_investigation") == "ready"
+	守望人·艾琳: 你回来了。林子里的声音，终于安静了些。
+	- 汇报调查结果。
+		do claim_quest("forest_investigation")
+		if last_operation_ok
+			守望人·艾琳: 村子欠你一个人情。今晚的风铃，可以安心响到天亮了。
+			守望人·艾琳: {{chapter_title()}}，到这里就告一段落。路上学会的招式与得到的装备，都属于你的旅途。
+			- 第一章完成，继续探索。
+				守望人·艾琳: 你仍可以探索林地、整理装备，或去诺安那里补给。下次经过村子，记得来歇歇脚。
+		else
+			守望人·艾琳: {{last_error}}
+	- 先不汇报。
+		守望人·艾琳: 我等你的消息。
+	=> END
+守望人·艾琳: {{chapter_title()}}已经完成。林间的路因为你重新通了，这份谢意不会因重逢而重领。
+守望人·艾琳: 往后的旅途还很长。今天先听一会儿风铃吧；准备好了，也可以继续探索。
+=> END

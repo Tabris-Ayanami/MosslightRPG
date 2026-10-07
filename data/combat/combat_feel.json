@@ -1,0 +1,81 @@
+{
+  "input": {
+    "id": "input",
+    "skill_buffer": 0.35,
+    "dodge_buffer": 0.2,
+    "skill_chain_window": 0.12,
+    "tap_threshold": 0.25,
+    "weapon_buffer": 0.35,
+    "combo_reset_delay": 0.65
+  },
+  "SINGLE_BLADE": {
+    "id": "SINGLE_BLADE",
+    "charge_duration": 0.6,
+    "charge_move_multiplier": 0.18,
+    "charge_release_startup": 0.08
+  },
+  "SHORT_WEAPON": {
+    "id": "SHORT_WEAPON",
+    "charge_duration": 0.42,
+    "charge_move_multiplier": 0.3,
+    "charge_release_startup": 0.06
+  },
+  "POLEARM": {
+    "id": "POLEARM",
+    "charge_duration": 0.68,
+    "charge_move_multiplier": 0.15,
+    "charge_release_startup": 0.1
+  },
+  "HEAVY_2H": {
+    "id": "HEAVY_2H",
+    "charge_duration": 0.9,
+    "charge_move_multiplier": 0.0,
+    "charge_release_startup": 0.2
+  },
+  "BOW": {
+    "id": "BOW",
+    "charge_duration": 0.65,
+    "charge_move_multiplier": 0.2,
+    "charge_release_startup": 0.06
+  },
+  "CASTER": {
+    "id": "CASTER",
+    "charge_duration": 0.75,
+    "charge_move_multiplier": 0.15,
+    "charge_release_startup": 0.08
+  },
+  "DUAL_SWORD": {
+    "id": "DUAL_SWORD",
+    "startup_multiplier": 0.6,
+    "strike_active_multiplier": 0.5,
+    "strike_gap": 0.1,
+    "minimum_recovery": 0.08,
+    "cycle_multiplier": 1.0,
+    "strike_order": [
+      1,
+      0
+    ],
+    "skill_templates": {
+      "spin": {
+        "strike_active": 0.2,
+        "strike_gap": 0.24
+      },
+      "thrust": {
+        "strike_active": 0.1,
+        "strike_gap": 0.14
+      },
+      "slash": {
+        "strike_active": 0.1,
+        "strike_gap": 0.14
+      }
+    }
+  },
+  "impact": {
+    "id": "impact",
+    "quick_stop": 0.03,
+    "light_stop": 0.045,
+    "finish_stop": 0.085,
+    "heavy_stop": 0.1,
+    "guard_stop": 0.04
+  }
+}

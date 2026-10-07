@@ -1,0 +1,523 @@
+{
+  "last_stand": {
+    "id": "last_stand",
+    "name": "绝地反击",
+    "event": "damage_before",
+    "conditions": [
+      {
+        "type": "self_hp",
+        "value": 0.3,
+        "op": "<"
+      }
+    ],
+    "effects": [
+      {
+        "type": "modifier",
+        "stat": "crit_chance",
+        "value": 0.15
+      }
+    ],
+    "cooldown": 0,
+    "min_level": 1
+  },
+  "sword_saint": {
+    "id": "sword_saint",
+    "name": "剑圣",
+    "event": "damage_before",
+    "conditions": [
+      {
+        "type": "weapon_family",
+        "value": [
+          "SINGLE_BLADE"
+        ],
+        "op": "in"
+      }
+    ],
+    "effects": [
+      {
+        "type": "modifier",
+        "stat": "crit_chance",
+        "value": 0.1
+      },
+      {
+        "type": "modifier",
+        "stat": "crit_multiplier",
+        "value": 0.35
+      }
+    ],
+    "cooldown": 0,
+    "min_level": 2
+  },
+  "shadow_assassin": {
+    "id": "shadow_assassin",
+    "name": "暗影刺客",
+    "event": "damage_before",
+    "conditions": [
+      {
+        "type": "behind_target",
+        "value": true
+      }
+    ],
+    "effects": [
+      {
+        "type": "forced_crit",
+        "value": true
+      }
+    ],
+    "cooldown": 0,
+    "min_level": 2,
+    "behind_angle": 120
+  },
+  "first_strike": {
+    "id": "first_strike",
+    "name": "先攻",
+    "event": "damage_before",
+    "conditions": [
+      {
+        "type": "first_hit",
+        "value": true
+      }
+    ],
+    "effects": [
+      {
+        "type": "forced_crit",
+        "value": true
+      }
+    ],
+    "cooldown": 0,
+    "min_level": 1,
+    "reset_after_combat": 5
+  },
+  "qi_reflux": {
+    "id": "qi_reflux",
+    "name": "能量回流",
+    "event": "perfect_dodge",
+    "conditions": [],
+    "effects": [
+      {
+        "type": "resource",
+        "resource": "Energy",
+        "amount": 20
+      }
+    ],
+    "cooldown": 3,
+    "min_level": 1
+  },
+  "hunter_instinct": {
+    "id": "hunter_instinct",
+    "name": "猎杀本能",
+    "event": "damage_before",
+    "conditions": [
+      {
+        "type": "target_hp",
+        "value": 0.3,
+        "op": "<"
+      }
+    ],
+    "effects": [
+      {
+        "type": "modifier",
+        "stat": "damage_multiplier",
+        "value": 0.15
+      }
+    ],
+    "cooldown": 0,
+    "min_level": 1
+  },
+  "elemental_piercing": {
+    "id": "elemental_piercing",
+    "name": "元素贯穿",
+    "event": "damage_before",
+    "conditions": [
+      {
+        "type": "elemental",
+        "value": true
+      },
+      {
+        "type": "presentation_type",
+        "value": "CASTER_ACTION"
+      }
+    ],
+    "effects": [
+      {
+        "type": "modifier",
+        "stat": "resistance_penetration",
+        "value": 0.1
+      }
+    ],
+    "cooldown": 0,
+    "min_level": 1
+  },
+  "steadfast": {
+    "id": "steadfast",
+    "name": "坚定",
+    "event": "stat_update",
+    "conditions": [
+      {
+        "type": "self_hp",
+        "value": 0.8,
+        "op": ">"
+      }
+    ],
+    "effects": [
+      {
+        "type": "modifier",
+        "stat": "Poise",
+        "value": 20
+      }
+    ],
+    "cooldown": 0,
+    "min_level": 1
+  },
+  "adverse_casting": {
+    "id": "adverse_casting",
+    "name": "逆境施法",
+    "event": "damage_before",
+    "conditions": [
+      {
+        "type": "self_hp",
+        "value": 0.3,
+        "op": "<"
+      },
+      {
+        "type": "presentation_type",
+        "value": "CASTER_ACTION"
+      }
+    ],
+    "effects": [
+      {
+        "type": "modifier",
+        "stat": "damage_multiplier",
+        "value": 0.15
+      }
+    ],
+    "cooldown": 0,
+    "min_level": 1
+  },
+  "sword_momentum": {
+    "id": "sword_momentum",
+    "name": "剑势",
+    "event": "damage_after",
+    "conditions": [],
+    "effects": [
+      {
+        "type": "hit_sequence",
+        "count": 3,
+        "presentation_type": "WEAPON_ACTION",
+        "skill_only": true,
+        "multiplier": 0.2
+      }
+    ],
+    "cooldown": 0,
+    "min_level": 3
+  },
+  "reversal": {
+    "id": "reversal",
+    "name": "反手",
+    "event": "perfect_dodge",
+    "conditions": [],
+    "effects": [
+      {
+        "type": "status",
+        "status": "reversal",
+        "duration": 4,
+        "target": "self"
+      }
+    ],
+    "cooldown": 5,
+    "min_level": 2
+  },
+  "shadow_escape": {
+    "id": "shadow_escape",
+    "name": "影遁",
+    "event": "perfect_dodge",
+    "conditions": [],
+    "effects": [
+      {
+        "type": "status",
+        "status": "stealth",
+        "duration": 1.5,
+        "target": "self"
+      }
+    ],
+    "cooldown": 6,
+    "min_level": 3
+  },
+  "eagle_eye": {
+    "id": "eagle_eye",
+    "name": "鹰眼",
+    "event": "damage_before",
+    "conditions": [
+      {
+        "type": "distance",
+        "value": 8,
+        "op": ">"
+      }
+    ],
+    "effects": [
+      {
+        "type": "modifier",
+        "stat": "crit_chance",
+        "value": 0.12
+      }
+    ],
+    "cooldown": 0,
+    "min_level": 2
+  },
+  "battle_sustain": {
+    "id": "battle_sustain",
+    "name": "以战养战",
+    "event": "damage_after",
+    "conditions": [
+      {
+        "type": "critical",
+        "value": true
+      }
+    ],
+    "effects": [
+      {
+        "type": "resource",
+        "resource": "Energy",
+        "amount": 20
+      }
+    ],
+    "cooldown": 3,
+    "min_level": 2
+  },
+  "unyielding_rage": {
+    "id": "unyielding_rage",
+    "name": "狂暴到底",
+    "event": "stat_update",
+    "conditions": [
+      {
+        "type": "self_hp",
+        "value": 0.3,
+        "op": "<"
+      }
+    ],
+    "effects": [
+      {
+        "type": "modifier",
+        "stat": "Poise",
+        "value": 40
+      },
+      {
+        "type": "modifier",
+        "stat": "damage_taken",
+        "value": 0.1
+      }
+    ],
+    "cooldown": 0,
+    "min_level": 3
+  },
+  "evocation_mastery": {
+    "id": "evocation_mastery",
+    "name": "塑能专精",
+    "event": "damage_before",
+    "conditions": [
+      {
+        "type": "elemental",
+        "value": true
+      },
+      {
+        "type": "presentation_type",
+        "value": "CASTER_ACTION"
+      }
+    ],
+    "effects": [
+      {
+        "type": "modifier",
+        "stat": "area_multiplier",
+        "value": 0.15,
+        "conditions": [
+          {
+            "type": "area",
+            "value": true
+          }
+        ]
+      },
+      {
+        "type": "modifier",
+        "stat": "resistance_penetration",
+        "value": 0.1
+      }
+    ],
+    "cooldown": 0,
+    "min_level": 2
+  },
+  "elemental_overload": {
+    "id": "elemental_overload",
+    "name": "元素过载",
+    "event": "action_started",
+    "conditions": [
+      {
+        "type": "elemental",
+        "value": true
+      },
+      {
+        "type": "presentation_type",
+        "value": "CASTER_ACTION"
+      }
+    ],
+    "effects": [
+      {
+        "type": "element_sequence",
+        "count": 3,
+        "multiplier": 0.25
+      }
+    ],
+    "cooldown": 0,
+    "min_level": 3
+  },
+  "hex_binding": {
+    "id": "hex_binding",
+    "name": "咒缚",
+    "event": "damage_before",
+    "conditions": [
+      {
+        "type": "target_status",
+        "value": "controlled_by_self"
+      }
+    ],
+    "effects": [
+      {
+        "type": "modifier",
+        "stat": "vulnerability_all",
+        "value": 0.15
+      }
+    ],
+    "cooldown": 0,
+    "min_level": 2
+  },
+  "azure_edge": {
+    "id": "azure_edge",
+    "name": "青钢余势",
+    "event": "perfect_dodge",
+    "conditions": [],
+    "effects": [
+      {
+        "type": "status",
+        "status": "keen_edge",
+        "duration": -1,
+        "target": "self"
+      }
+    ],
+    "cooldown": 0,
+    "min_level": 1
+  },
+  "dagger_ambush": {
+    "id": "dagger_ambush",
+    "name": "猎人伏击",
+    "event": "damage_before",
+    "conditions": [
+      {
+        "type": "behind_target",
+        "value": true
+      }
+    ],
+    "effects": [
+      {
+        "type": "modifier",
+        "stat": "damage_multiplier",
+        "value": 0.1
+      }
+    ],
+    "cooldown": 0,
+    "min_level": 1
+  },
+  "spear_pressure": {
+    "id": "spear_pressure",
+    "name": "长枪破势",
+    "event": "damage_before",
+    "conditions": [],
+    "effects": [
+      {
+        "type": "modifier",
+        "stat": "poise_damage_multiplier",
+        "value": 0.1
+      }
+    ],
+    "cooldown": 0,
+    "min_level": 1
+  },
+  "axe_execution": {
+    "id": "axe_execution",
+    "name": "巨斧追命",
+    "event": "damage_before",
+    "conditions": [
+      {
+        "type": "target_hp",
+        "value": 0.3,
+        "op": "<"
+      }
+    ],
+    "effects": [
+      {
+        "type": "modifier",
+        "stat": "crit_multiplier",
+        "value": 0.25
+      }
+    ],
+    "cooldown": 0,
+    "min_level": 1
+  },
+  "staff_reach": {
+    "id": "staff_reach",
+    "name": "法杖延展",
+    "event": "stat_update",
+    "conditions": [],
+    "effects": [
+      {
+        "type": "modifier",
+        "stat": "spell_range_multiplier",
+        "value": 0.05
+      }
+    ],
+    "cooldown": 0,
+    "min_level": 1
+  },
+  "storm_piercing": {
+    "id": "storm_piercing",
+    "name": "风暴穿透",
+    "event": "damage_before",
+    "conditions": [
+      {
+        "type": "damage_type",
+        "value": "LIGHTNING"
+      }
+    ],
+    "effects": [
+      {
+        "type": "modifier",
+        "stat": "resistance_penetration",
+        "value": 0.1
+      }
+    ],
+    "cooldown": 0,
+    "min_level": 1
+  },
+  "dual_sword_mastery": {
+    "id": "dual_sword_mastery",
+    "name": "二刀流精通",
+    "event": "action_transform",
+    "action_rule": "dual_sword_skill_repeat",
+    "conditions": [
+      {
+        "type": "level",
+        "op": ">=",
+        "value": 10
+      },
+      {
+        "type": "weapon_family",
+        "op": "in",
+        "value": [
+          "SINGLE_BLADE"
+        ]
+      }
+    ],
+    "effects": [],
+    "cooldown": 0,
+    "min_level": 10,
+    "description": "双剑同时持有时，剑武技和剑技由左剑、右剑连续发动；回旋斩两轮，前刺只突进一次再刺两下。费用与冷却按一次施放计算。"
+  }
+}

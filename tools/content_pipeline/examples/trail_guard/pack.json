@@ -1,0 +1,60 @@
+{
+  "format_version": 1,
+  "pack_id": "trail_guard",
+  "version": "0.2.0",
+  "description": "统一 Energy 内容协议示例：技能消耗 20 点能量，被动恢复 20 点能量；这些是运行时数值，不使用旧气或法术位单位。一件补给、一把长剑、一顶兜帽、一项技能、一项被动和一个战士进阶；图标是测试占位图，不是正式美术。",
+  "catalogs": {
+    "items": {
+      "trail_guard:herbal_draught": {
+        "id": "trail_guard:herbal_draught", "name": "林地药剂", "description": "恢复最大生命的 20% 和额外 30 点生命。",
+        "category": "consumable", "effect": "resource", "resource": "HP", "fraction": 0.2, "amount": 30, "cooldown": 6
+      }
+    },
+    "weapons": {
+      "trail_guard:watch_sword": {
+        "id": "trail_guard:watch_sword", "name": "守望长剑", "weapon_type": "Sword", "animation_family": "SINGLE_BLADE",
+        "quality": "Fine", "weapon_scaling": 31, "model_id": "sword", "visual": {"style": "sword", "color": "#83B9AA"},
+        "requirements": [{"type": "stat", "stat": "STR", "op": ">=", "value": 11}],
+        "conditions": [{"type": "stat", "stat": "STR", "op": ">=", "value": 11}], "special_effects": ["azure_edge"]
+      }
+    },
+    "equipment": {
+      "trail_guard:scout_hood": {
+        "id": "trail_guard:scout_hood", "name": "巡林兜帽", "slot": "head", "visual": {"style": "hood", "color": "#477D66"},
+        "modifiers": {"PER": 1, "Armor": 2}, "passives": [], "requirements": [], "conditions": []
+      }
+    },
+    "skills": {
+      "trail_guard:guard_cut": {
+        "id": "trail_guard:guard_cut", "name": "守望斩", "description": "挥剑击中前方目标，短暂减缓目标移动。",
+        "is_skill": true, "presentation_type": "WEAPON_ACTION", "startup": 0.25, "active": 0.14, "recovery": 0.35, "cooldown": 6,
+        "costs": {"Energy": 20}, "gains": {}, "formula": {"weapon": 0.85, "STR": 4}, "damage_type": "PHYSICAL",
+        "targeting": "CONE", "range": 3, "angle": 85, "poise_damage": 20, "can_crit": true,
+        "conditions": [{"type": "weapon_family", "value": ["SINGLE_BLADE"], "op": "in"}],
+        "effects": [{"type": "status", "status": "slow", "duration": 1.25}], "min_level": 3
+      }
+    },
+    "passives": {
+      "trail_guard:steady_breath": {
+        "id": "trail_guard:steady_breath", "name": "稳息", "event": "perfect_dodge",
+        "conditions": [], "effects": [{"type": "resource", "resource": "Energy", "amount": 20}], "cooldown": 5, "min_level": 3
+      }
+    },
+    "careers": {
+      "trail_guard:warden": {
+        "id": "trail_guard:warden", "name": "巡林卫士", "base_career": "warrior", "parent_career": "warrior", "required_level": 3, "max_level": 10,
+        "stats": {}, "formulas": {}, "proficiencies": [], "weapon_proficiencies": [], "next_careers": [],
+        "skills": ["trail_guard:guard_cut"], "passives": ["trail_guard:steady_breath"], "default_sets": []
+      }
+    }
+  },
+  "career_links": [{"parent": "warrior", "child": "trail_guard:warden"}],
+  "career_grants": [{"career": "warrior", "skills": ["trail_guard:guard_cut"]}],
+  "assets": {
+    "trail_guard:placeholder_icon": {"kind": "icon", "path": "assets/placeholder.png", "width": 1, "height": 1, "license": "CC0-1.0", "source": "Locally authored single-pixel protocol test fixture; replace before release"}
+  },
+  "bindings": [
+    {"catalog": "items", "id": "trail_guard:herbal_draught", "assets": {"icon": "trail_guard:placeholder_icon"}},
+    {"catalog": "skills", "id": "trail_guard:guard_cut", "assets": {"icon": "trail_guard:placeholder_icon"}}
+  ]
+}

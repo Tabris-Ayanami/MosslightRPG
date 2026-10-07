@@ -1,0 +1,234 @@
+{
+  "burn": {
+    "id": "burn",
+    "name": "燃烧",
+    "duration": 3,
+    "tick_interval": 1,
+    "conditions": [],
+    "effects": [
+      {
+        "type": "damage",
+        "formula": {
+          "base": 10,
+          "weapon": 0,
+          "INT": 1
+        },
+        "damage_type": "FIRE",
+        "can_crit": false
+      }
+    ],
+    "stack_rule": "refresh",
+    "max_stacks": 1,
+    "damage_type": "FIRE",
+    "can_crit": false,
+    "formula": {
+      "base": 10,
+      "weapon": 0,
+      "INT": 1
+    }
+  },
+  "slow": {
+    "id": "slow",
+    "name": "减速",
+    "duration": 1.5,
+    "tick_interval": 0,
+    "conditions": [],
+    "effects": [
+      {
+        "type": "modifier",
+        "stat": "move_speed_multiplier",
+        "value": -0.25
+      }
+    ],
+    "stack_rule": "refresh",
+    "max_stacks": 1
+  },
+  "physical_vulnerability": {
+    "id": "physical_vulnerability",
+    "name": "物理易伤",
+    "duration": 3,
+    "tick_interval": 0,
+    "conditions": [],
+    "effects": [
+      {
+        "type": "modifier",
+        "stat": "vulnerability_physical",
+        "value": 0.1
+      }
+    ],
+    "stack_rule": "refresh",
+    "max_stacks": 1
+  },
+  "vulnerability": {
+    "id": "vulnerability",
+    "name": "易伤",
+    "duration": 3,
+    "tick_interval": 0,
+    "conditions": [],
+    "effects": [
+      {
+        "type": "modifier",
+        "stat": "vulnerability_all",
+        "value": 0.15
+      }
+    ],
+    "stack_rule": "refresh",
+    "max_stacks": 1
+  },
+  "stealth": {
+    "id": "stealth",
+    "name": "隐匿",
+    "duration": 2.5,
+    "tick_interval": 0,
+    "conditions": [],
+    "effects": [
+      {
+        "type": "stealth",
+        "value": true
+      }
+    ],
+    "stack_rule": "refresh",
+    "max_stacks": 1,
+    "break_on_attack": true
+  },
+  "shield": {
+    "id": "shield",
+    "name": "护盾",
+    "duration": 20,
+    "tick_interval": 0,
+    "conditions": [],
+    "effects": [
+      {
+        "type": "shield",
+        "formula": {
+          "base": 120,
+          "weapon": 0,
+          "INT": 8
+        }
+      }
+    ],
+    "stack_rule": "replace",
+    "max_stacks": 1
+  },
+  "root": {
+    "id": "root",
+    "name": "束缚",
+    "duration": 2,
+    "tick_interval": 0,
+    "conditions": [],
+    "effects": [
+      {
+        "type": "modifier",
+        "stat": "move_speed_multiplier",
+        "value": -1
+      }
+    ],
+    "stack_rule": "refresh",
+    "max_stacks": 1,
+    "is_control": true
+  },
+  "binding_slow": {
+    "id": "binding_slow",
+    "name": "咒缚减速",
+    "duration": 2,
+    "tick_interval": 0,
+    "conditions": [],
+    "effects": [
+      {
+        "type": "modifier",
+        "stat": "move_speed_multiplier",
+        "value": -0.3
+      }
+    ],
+    "stack_rule": "refresh",
+    "max_stacks": 1,
+    "is_control": true
+  },
+  "blood_rage": {
+    "id": "blood_rage",
+    "name": "血怒",
+    "duration": 6,
+    "tick_interval": 0,
+    "conditions": [],
+    "effects": [
+      {
+        "type": "modifier",
+        "stat": "damage_multiplier",
+        "value": 0.2
+      }
+    ],
+    "stack_rule": "refresh",
+    "max_stacks": 1
+  },
+  "reversal": {
+    "id": "reversal",
+    "name": "反手",
+    "duration": 4,
+    "tick_interval": 0,
+    "conditions": [],
+    "effects": [
+      {
+        "type": "modifier",
+        "stat": "weapon_energy_cost_override",
+        "value": 0.0
+      }
+    ],
+    "stack_rule": "refresh",
+    "max_stacks": 1,
+    "consume_on": "WEAPON_ACTION",
+    "skill_only": true
+  },
+  "keen_edge": {
+    "id": "keen_edge",
+    "name": "青钢余势",
+    "duration": -1,
+    "tick_interval": 0,
+    "conditions": [],
+    "effects": [
+      {
+        "type": "modifier",
+        "stat": "crit_chance",
+        "value": 0.15
+      }
+    ],
+    "stack_rule": "refresh",
+    "max_stacks": 1,
+    "consume_on": "damage_attack"
+  },
+  "sword_momentum": {
+    "id": "sword_momentum",
+    "name": "剑势",
+    "duration": -1,
+    "tick_interval": 0,
+    "conditions": [],
+    "effects": [
+      {
+        "type": "modifier",
+        "stat": "damage_multiplier",
+        "value": 0.2
+      }
+    ],
+    "stack_rule": "refresh",
+    "max_stacks": 1,
+    "consume_on": "WEAPON_ACTION",
+    "skill_only": true
+  },
+  "elemental_overload": {
+    "id": "elemental_overload",
+    "name": "元素过载",
+    "duration": -1,
+    "tick_interval": 0,
+    "conditions": [],
+    "effects": [
+      {
+        "type": "modifier",
+        "stat": "damage_multiplier",
+        "value": 0.25
+      }
+    ],
+    "stack_rule": "refresh",
+    "max_stacks": 1,
+    "consume_on": "CASTER_ACTION",
+    "skill_only": false
+  }
+}

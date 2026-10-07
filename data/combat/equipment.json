@@ -1,0 +1,235 @@
+{
+  "scout_hood": {
+    "id": "scout_hood",
+    "name": "斥候兜帽",
+    "slot": "head",
+    "color": "#638F79",
+    "visual": {
+      "style": "hood",
+      "color": "#638F79"
+    },
+    "modifiers": {
+      "PER": 1
+    },
+    "passives": [],
+    "requirements": [],
+    "conditions": []
+  },
+  "iron_helm": {
+    "id": "iron_helm",
+    "name": "铁甲头盔",
+    "slot": "head",
+    "color": "#A2B3C4",
+    "visual": {
+      "style": "helm",
+      "color": "#A2B3C4"
+    },
+    "modifiers": {
+      "Armor": 8
+    },
+    "passives": [
+      "steadfast"
+    ],
+    "requirements": [
+      {
+        "type": "stat",
+        "value": 12,
+        "op": ">=",
+        "stat": "CON"
+      }
+    ],
+    "conditions": [
+      {
+        "type": "stat",
+        "value": 12,
+        "op": ">=",
+        "stat": "CON"
+      }
+    ]
+  },
+  "linen_tunic": {
+    "id": "linen_tunic",
+    "name": "亚麻上衣",
+    "slot": "torso",
+    "color": "#D6BA89",
+    "visual": {
+      "style": "tunic",
+      "color": "#D6BA89"
+    },
+    "modifiers": {
+      "CHA": 1
+    },
+    "passives": [],
+    "requirements": [],
+    "conditions": []
+  },
+  "plate_armor": {
+    "id": "plate_armor",
+    "name": "铁甲胸衣",
+    "slot": "torso",
+    "color": "#607F9A",
+    "visual": {
+      "style": "armor",
+      "color": "#607F9A"
+    },
+    "modifiers": {
+      "Armor": 18
+    },
+    "passives": [],
+    "requirements": [
+      {
+        "type": "stat",
+        "value": 12,
+        "op": ">=",
+        "stat": "STR"
+      }
+    ],
+    "conditions": [
+      {
+        "type": "stat",
+        "value": 12,
+        "op": ">=",
+        "stat": "STR"
+      }
+    ]
+  },
+  "traveler_pants": {
+    "id": "traveler_pants",
+    "name": "旅人长裤",
+    "slot": "legs",
+    "color": "#5B756F",
+    "visual": {
+      "style": "pants",
+      "color": "#5B756F"
+    },
+    "modifiers": {
+      "DEX": 1
+    },
+    "passives": [],
+    "requirements": [],
+    "conditions": []
+  },
+  "iron_greaves": {
+    "id": "iron_greaves",
+    "name": "铁甲护腿",
+    "slot": "legs",
+    "color": "#8D9DB0",
+    "visual": {
+      "style": "greaves",
+      "color": "#8D9DB0"
+    },
+    "modifiers": {
+      "Armor": 10
+    },
+    "passives": [],
+    "requirements": [],
+    "conditions": []
+  },
+  "soft_shoes": {
+    "id": "soft_shoes",
+    "name": "轻便软鞋",
+    "slot": "feet",
+    "color": "#A77A55",
+    "visual": {
+      "style": "shoes",
+      "color": "#A77A55"
+    },
+    "modifiers": {
+      "DEX": 1
+    },
+    "passives": [],
+    "requirements": [],
+    "conditions": []
+  },
+  "hunter_boots": {
+    "id": "hunter_boots",
+    "name": "猎人长靴",
+    "slot": "feet",
+    "color": "#5D7764",
+    "visual": {
+      "style": "boots",
+      "color": "#5D7764"
+    },
+    "modifiers": {
+      "PER": 1
+    },
+    "passives": [],
+    "requirements": [],
+    "conditions": []
+  },
+  "vigor_belt": {
+    "id": "vigor_belt",
+    "name": "活力腰带",
+    "slot": "belt",
+    "color": "#AF904E",
+    "visual": {
+      "style": "belt",
+      "color": "#AF904E"
+    },
+    "modifiers": {
+      "CON": 1
+    },
+    "passives": [],
+    "requirements": [],
+    "conditions": []
+  },
+  "qi_ring": {
+    "id": "qi_ring",
+    "name": "回流指环",
+    "slot": "ring",
+    "color": "#69D4B3",
+    "visual": {
+      "style": "ring",
+      "color": "#69D4B3"
+    },
+    "modifiers": {},
+    "passives": [
+      "qi_reflux"
+    ],
+    "requirements": [],
+    "conditions": [],
+    "slots": [
+      "ring1",
+      "ring2"
+    ]
+  },
+  "hunter_ring": {
+    "id": "hunter_ring",
+    "name": "猎杀指环",
+    "slot": "ring",
+    "color": "#C59861",
+    "visual": {
+      "style": "ring",
+      "color": "#C59861"
+    },
+    "modifiers": {},
+    "passives": [
+      "hunter_instinct"
+    ],
+    "requirements": [],
+    "conditions": [],
+    "slots": [
+      "ring1",
+      "ring2"
+    ]
+  },
+  "scholar_pendant": {
+    "id": "scholar_pendant",
+    "name": "元素学者项链",
+    "slot": "neck",
+    "color": "#94B2F0",
+    "visual": {
+      "style": "pendant",
+      "color": "#94B2F0"
+    },
+    "modifiers": {
+      "INT": 1
+    },
+    "passives": [
+      "elemental_piercing",
+      "adverse_casting"
+    ],
+    "requirements": [],
+    "conditions": []
+  }
+}

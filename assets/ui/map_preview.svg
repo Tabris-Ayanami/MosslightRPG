@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="168" height="168" viewBox="0 0 168 168">
+<defs><clipPath id="rim"><circle cx="84" cy="84" r="76"/></clipPath></defs>
+<g clip-path="url(#rim)">
+<rect width="168" height="168" fill="#8da079"/>
+<path d="M-12 37Q20 21 40 34T76 34Q86 49 71 63T59 96Q69 110 58 133L70 183H-9Z" fill="#658e85"/>
+<path d="M4 49Q30 37 39 46T64 46Q57 62 48 69T42 100Q58 121 42 144L43 169" fill="none" stroke="#aec1a0" stroke-width="3" opacity=".6"/>
+<path d="M147-8Q126 25 142 51T134 87Q127 100 150 121L180 165V-8" fill="#72998d"/>
+<path d="M64-5Q85 28 63 46Q98 39 107 62T127 82L153 84Q168 36 151-5" fill="#aeb98c"/>
+<path d="M67 105Q83 117 95 101T126 103L143 131Q119 165 96 171L73 155Z" fill="#a4b086"/>
+<path d="M94 64Q102 48 124 55T151 87Q139 108 117 115T94 102Q104 83 94 64" fill="#6c8763"/>
+<g fill="none" stroke="#c0c4a0" stroke-width=".8" opacity=".45">
+<path d="M77-5Q78 10 73 21T78 43M86-4Q93 9 85 24T87 48M89 124Q107 119 119 129T126 153M87 132Q102 128 112 137T120 157"/>
+<path d="M102 61Q125 49 140 66T142 99M109 64Q126 58 135 69T136 93M91 115Q103 116 104 120"/>
+</g>
+<g fill="none" stroke="#d7c492" stroke-linecap="round" stroke-linejoin="round">
+<path d="M78 167L72 131Q79 105 84 91L79 67L89 42L93 6" stroke-width="4"/>
+<path d="M83 94Q108 82 125 90L148 103M81 71L57 75M88 31L70 25M89 30L117 22" stroke-width="2.5"/>
+</g>
+<g fill="#456c51" stroke="#6f8a60" stroke-width="1.2">
+<path d="M111 58l-5 8h3l-5 7h14l-5-7h3zM126 55l-5 8h3l-5 7h14l-5-7h3zM139 66l-5 8h3l-5 7h14l-5-7h3zM115 79l-5 8h3l-5 7h14l-5-7h3zM131 87l-5 8h3l-5 7h14l-5-7h3zM106 99l-5 8h3l-5 7h14l-5-7h3z"/>
+</g>
+<g fill="#dfd1a9" stroke="#8b8060" stroke-width="1">
+<path d="M66 15l9-2 2 8-9 2zM98 12l10 2-1 7-10-2zM103 28l12-2 2 9-12 2zM68 31l9 3-2 8-9-3z"/>
+</g>
+<g stroke="#b7a47b" stroke-width="1.4"><path d="M71 14l2 8M103 13l-1 7M108 27l2 10M73 32l-2 9"/></g>
+<circle cx="56" cy="91" r="11" fill="none" stroke="#e2d7b3" stroke-width="3"/>
+<circle cx="56" cy="91" r="3" fill="#ddce9e"/>
+<path d="M73 110l-10 7M59 120l-8 7" stroke="#d9cc9d" stroke-width="2"/>
+<g fill="#dde0b8"><circle cx="84" cy="111" r="1"/><circle cx="82" cy="116" r="1"/><circle cx="86" cy="121" r="1"/><circle cx="86" cy="127" r="1"/></g>
+</g></svg>

@@ -1,0 +1,903 @@
+{
+  "format_version": 1,
+  "pack_id": "srd_frontier",
+  "version": "0.1.0",
+  "catalogs": {
+    "weapons": {
+      "srd_frontier:reed_sabre": {
+        "id": "srd_frontier:reed_sabre",
+        "name": "苇纹军刀",
+        "description": "苇叶纹浅刻于刃面，旧铜护手配褐色缠柄。刀身轻巧均衡，适合近身连续挥斩。",
+        "weapon_type": "Sword",
+        "animation_family": "SINGLE_BLADE",
+        "quality": "Common",
+        "weapon_scaling": 27,
+        "requirements": [],
+        "conditions": [],
+        "special_effects": [],
+        "model_id": "sword",
+        "visual": {
+          "style": "sword",
+          "color": "#78957C"
+        }
+      },
+      "srd_frontier:trail_dagger": {
+        "id": "srd_frontier:trail_dagger",
+        "name": "山道短匕",
+        "description": "短刃便于在狭窄山道里转身和格挡，暗色皮柄不易脱手。适合敏捷的近身连击。",
+        "weapon_type": "Dagger",
+        "animation_family": "SHORT_WEAPON",
+        "quality": "Common",
+        "weapon_scaling": 24,
+        "requirements": [
+          {
+            "type": "stat",
+            "stat": "DEX",
+            "op": ">=",
+            "value": 10
+          }
+        ],
+        "conditions": [
+          {
+            "type": "stat",
+            "stat": "DEX",
+            "op": ">=",
+            "value": 10
+          }
+        ],
+        "special_effects": [],
+        "model_id": "dagger",
+        "visual": {
+          "style": "dagger",
+          "color": "#B18C67"
+        }
+      },
+      "srd_frontier:watch_spear": {
+        "id": "srd_frontier:watch_spear",
+        "name": "巡林长枪",
+        "description": "长木柄以皮绳加固，枪锋朴素耐用。较长触及适合守住通道并先手压制。",
+        "weapon_type": "Spear",
+        "animation_family": "POLEARM",
+        "quality": "Fine",
+        "weapon_scaling": 30,
+        "requirements": [
+          {
+            "type": "stat",
+            "stat": "STR",
+            "op": ">=",
+            "value": 11
+          }
+        ],
+        "conditions": [
+          {
+            "type": "stat",
+            "stat": "STR",
+            "op": ">=",
+            "value": 11
+          }
+        ],
+        "special_effects": [],
+        "model_id": "spear",
+        "visual": {
+          "style": "spear",
+          "color": "#9B9274"
+        }
+      },
+      "srd_frontier:stonecleft_axe": {
+        "id": "srd_frontier:stonecleft_axe",
+        "name": "石隙战斧",
+        "description": "粗重斧头带有石纹缺口，双手握柄便于蓄力下劈。适合力量型重击。",
+        "weapon_type": "GreatAxe",
+        "animation_family": "HEAVY_2H",
+        "quality": "Fine",
+        "weapon_scaling": 34,
+        "requirements": [
+          {
+            "type": "stat",
+            "stat": "STR",
+            "op": ">=",
+            "value": 13
+          }
+        ],
+        "conditions": [
+          {
+            "type": "stat",
+            "stat": "STR",
+            "op": ">=",
+            "value": 13
+          }
+        ],
+        "special_effects": [],
+        "model_id": "greataxe",
+        "visual": {
+          "style": "greataxe",
+          "color": "#9B806C"
+        }
+      },
+      "srd_frontier:longpath_bow": {
+        "id": "srd_frontier:longpath_bow",
+        "name": "远径猎弓",
+        "description": "弓臂采用弹韧木材，弦槽经常年使用磨得光滑。适合中远距离点射。",
+        "weapon_type": "Bow",
+        "animation_family": "BOW",
+        "quality": "Common",
+        "weapon_scaling": 28,
+        "requirements": [
+          {
+            "type": "stat",
+            "stat": "DEX",
+            "op": ">=",
+            "value": 11
+          }
+        ],
+        "conditions": [
+          {
+            "type": "stat",
+            "stat": "DEX",
+            "op": ">=",
+            "value": 11
+          }
+        ],
+        "special_effects": [],
+        "model_id": "bow",
+        "visual": {
+          "style": "bow",
+          "color": "#779578"
+        }
+      },
+      "srd_frontier:cinder_staff": {
+        "id": "srd_frontier:cinder_staff",
+        "name": "余烬木杖",
+        "description": "焦木杖头嵌着暗红矿晶，握柄留有耐热布缠层。用于施展远距离元素法术。",
+        "weapon_type": "Staff",
+        "animation_family": "CASTER",
+        "quality": "Common",
+        "weapon_scaling": 23,
+        "requirements": [
+          {
+            "type": "stat",
+            "stat": "INT",
+            "op": ">=",
+            "value": 11
+          }
+        ],
+        "conditions": [
+          {
+            "type": "stat",
+            "stat": "INT",
+            "op": ">=",
+            "value": 11
+          }
+        ],
+        "special_effects": [],
+        "model_id": "staff",
+        "visual": {
+          "style": "staff",
+          "color": "#9C7EA3"
+        }
+      }
+    },
+    "equipment": {
+      "srd_frontier:briar_cap": {
+        "id": "srd_frontier:briar_cap",
+        "name": "荆枝软帽",
+        "description": "轻布帽嵌着一圈柔韧荆枝，提供观察优势与极轻防护。",
+        "slot": "head",
+        "visual": {
+          "style": "hood",
+          "color": "#66856D"
+        },
+        "color": "#66856D",
+        "modifiers": {
+          "PER": 1,
+          "Armor": 1
+        },
+        "passives": [],
+        "requirements": [],
+        "conditions": []
+      },
+      "srd_frontier:roadwarden_coat": {
+        "id": "srd_frontier:roadwarden_coat",
+        "name": "行路守卫外衣",
+        "description": "多层粗布与皮革缝合的旅行外衣，防护适中，不要求属性。",
+        "slot": "torso",
+        "visual": {
+          "style": "tunic",
+          "color": "#B38F61"
+        },
+        "color": "#B38F61",
+        "modifiers": {
+          "Armor": 3
+        },
+        "passives": [],
+        "requirements": [],
+        "conditions": []
+      },
+      "srd_frontier:riveted_hauberk": {
+        "id": "srd_frontier:riveted_hauberk",
+        "name": "铆钉短锁甲",
+        "description": "短身锁甲强化躯干防护，沉重结构要求至少12点力量。",
+        "slot": "torso",
+        "visual": {
+          "style": "armor",
+          "color": "#77868B"
+        },
+        "color": "#77868B",
+        "modifiers": {
+          "Armor": 6
+        },
+        "passives": [],
+        "requirements": [
+          {
+            "type": "stat",
+            "stat": "STR",
+            "op": ">=",
+            "value": 12
+          }
+        ],
+        "conditions": [
+          {
+            "type": "stat",
+            "stat": "STR",
+            "op": ">=",
+            "value": 12
+          }
+        ]
+      },
+      "srd_frontier:gripstep_greaves": {
+        "id": "srd_frontier:gripstep_greaves",
+        "name": "踏稳护胫",
+        "description": "软衬护胫兼顾耐久与行动，轻微增加体魄。",
+        "slot": "legs",
+        "visual": {
+          "style": "greaves",
+          "color": "#74836C"
+        },
+        "color": "#74836C",
+        "modifiers": {
+          "Armor": 2,
+          "CON": 1
+        },
+        "passives": [],
+        "requirements": [],
+        "conditions": []
+      },
+      "srd_frontier:windwalk_boots": {
+        "id": "srd_frontier:windwalk_boots",
+        "name": "风径短靴",
+        "description": "薄底皮靴帮助快速卸力；精准闪避后恢复1点体力，每8秒最多触发一次。",
+        "slot": "feet",
+        "visual": {
+          "style": "boots",
+          "color": "#826C54"
+        },
+        "color": "#826C54",
+        "modifiers": {
+          "DEX": 1
+        },
+        "passives": [
+          "srd_frontier:surefoot_reflex"
+        ],
+        "requirements": [],
+        "conditions": []
+      },
+      "srd_frontier:oakward_pendant": {
+        "id": "srd_frontier:oakward_pendant",
+        "name": "橡木守心坠",
+        "description": "刻有年轮纹的木坠；生命高于四分之三时增加少量韧性。",
+        "slot": "neck",
+        "visual": {
+          "style": "pendant",
+          "color": "#789A78"
+        },
+        "color": "#789A78",
+        "modifiers": {
+          "Armor": 1
+        },
+        "passives": [
+          "srd_frontier:high_guard"
+        ],
+        "requirements": [],
+        "conditions": []
+      }
+    },
+    "items": {
+      "srd_frontier:field_medic_draught": {
+        "id": "srd_frontier:field_medic_draught",
+        "name": "行军疗剂",
+        "description": "饮用后恢复最大生命值的16%并额外恢复8点生命值。冷却8秒。",
+        "category": "consumable",
+        "effect": "resource",
+        "resource": "HP",
+        "fraction": 0.16,
+        "amount": 8,
+        "cooldown": 8
+      },
+      "srd_frontier:blueleaf_tonic": {
+        "id": "srd_frontier:blueleaf_tonic",
+        "name": "蓝叶能量饮",
+        "description": "恢复最大Energy的18%并额外恢复8点Energy。冷却8秒。",
+        "category": "consumable",
+        "effect": "resource",
+        "resource": "Energy",
+        "fraction": 0.18,
+        "amount": 8,
+        "cooldown": 8
+      },
+      "srd_frontier:stamina_salts": {
+        "id": "srd_frontier:stamina_salts",
+        "name": "耐力盐包",
+        "description": "恢复最大体力的15%，并额外恢复1点体力。冷却10秒。",
+        "category": "consumable",
+        "effect": "resource",
+        "resource": "Stamina",
+        "fraction": 0.15,
+        "amount": 1,
+        "cooldown": 10
+      },
+      "srd_frontier:ashglass_flask": {
+        "id": "srd_frontier:ashglass_flask",
+        "name": "灰晶爆瓶",
+        "description": "向指定地点投出易碎火液瓶，对小范围造成火焰伤害。冷却12秒。",
+        "category": "consumable",
+        "effect": "action",
+        "cooldown": 12,
+        "action": {
+          "id": "srd_frontier:ashglass_flask_action",
+          "name": "灰晶爆瓶",
+          "is_skill": false,
+          "is_reaction": true,
+          "presentation_type": "SPELL",
+          "startup": 0.12,
+          "active": 0.1,
+          "recovery": 0.18,
+          "cooldown": 0,
+          "costs": {},
+          "gains": {},
+          "formula": {
+            "base": 34
+          },
+          "damage_type": "FIRE",
+          "targeting": "POINT",
+          "range": 10,
+          "radius": 2.2,
+          "poise_damage": 16,
+          "knockback_force": 0,
+          "launch_force": 0,
+          "knockdown": false,
+          "can_crit": false,
+          "conditions": [],
+          "effects": []
+        }
+      },
+      "srd_frontier:frostmoss_poultice": {
+        "id": "srd_frontier:frostmoss_poultice",
+        "name": "霜苔敷包",
+        "description": "抛向目标点，短暂减缓范围内敌人的移动。冷却14秒。",
+        "category": "consumable",
+        "effect": "action",
+        "cooldown": 14,
+        "action": {
+          "id": "srd_frontier:frostmoss_poultice_action",
+          "name": "霜苔敷包",
+          "is_skill": false,
+          "is_reaction": true,
+          "presentation_type": "SPELL",
+          "startup": 0.12,
+          "active": 0.1,
+          "recovery": 0.18,
+          "cooldown": 0,
+          "costs": {},
+          "gains": {},
+          "formula": {
+            "base": 0
+          },
+          "damage_type": "ICE",
+          "targeting": "POINT",
+          "range": 9,
+          "radius": 2.6,
+          "poise_damage": 0,
+          "knockback_force": 0,
+          "launch_force": 0,
+          "knockdown": false,
+          "can_crit": false,
+          "conditions": [],
+          "effects": [
+            {
+              "type": "status",
+              "status": "slow",
+              "duration": 1.3
+            }
+          ]
+        }
+      },
+      "srd_frontier:ironbark_charm": {
+        "id": "srd_frontier:ironbark_charm",
+        "name": "铁树皮护符",
+        "description": "使用后获得一层短暂护盾，可在受击时抵消部分伤害。冷却18秒。",
+        "category": "consumable",
+        "effect": "action",
+        "cooldown": 18,
+        "action": {
+          "id": "srd_frontier:ironbark_charm_action",
+          "name": "铁树皮护符",
+          "is_skill": false,
+          "is_reaction": true,
+          "presentation_type": "SPELL",
+          "startup": 0.12,
+          "active": 0.1,
+          "recovery": 0.18,
+          "cooldown": 0,
+          "costs": {},
+          "gains": {},
+          "formula": {
+            "base": 0
+          },
+          "damage_type": "PHYSICAL",
+          "targeting": "SELF",
+          "range": 0,
+          "radius": 0,
+          "poise_damage": 0,
+          "knockback_force": 0,
+          "launch_force": 0,
+          "knockdown": false,
+          "can_crit": false,
+          "conditions": [],
+          "effects": [
+            {
+              "type": "shield",
+              "value": 36,
+              "target": "self",
+              "duration": 5
+            }
+          ]
+        }
+      }
+    },
+    "skills": {
+      "srd_frontier:briar_sweep": {
+        "id": "srd_frontier:briar_sweep",
+        "name": "荆枝横断",
+        "description": "贴近挥出宽幅横斩，适合清理逼近的敌人。",
+        "is_skill": true,
+        "presentation_type": "WEAPON_ACTION",
+        "startup": 0.2,
+        "active": 0.12,
+        "recovery": 0.27,
+        "cooldown": 6,
+        "costs": {
+          "Energy": 12
+        },
+        "gains": {},
+        "formula": {
+          "weapon": 0.9,
+          "STR": 4
+        },
+        "damage_type": "PHYSICAL",
+        "targeting": "CONE",
+        "range": 3.1,
+        "radius": 3.1,
+        "angle": 100,
+        "width": 1,
+        "poise_damage": 28,
+        "knockback_force": 1,
+        "launch_force": 0,
+        "knockdown": false,
+        "can_crit": true,
+        "conditions": [
+          {
+            "type": "weapon_family",
+            "value": [
+              "SINGLE_BLADE"
+            ],
+            "op": "in"
+          }
+        ],
+        "effects": [],
+        "min_level": 1
+      },
+      "srd_frontier:longpath_piercer": {
+        "id": "srd_frontier:longpath_piercer",
+        "name": "远径穿矢",
+        "description": "蓄势射出一支穿透箭，命中路径上的敌人；发射慢于普通箭。",
+        "is_skill": true,
+        "presentation_type": "WEAPON_ACTION",
+        "startup": 0.26,
+        "active": 0.1,
+        "recovery": 0.32,
+        "cooldown": 8,
+        "costs": {
+          "Energy": 16
+        },
+        "gains": {},
+        "formula": {
+          "weapon": 1.1,
+          "DEX": 5,
+          "PER": 2
+        },
+        "damage_type": "PHYSICAL",
+        "targeting": "DIRECTION",
+        "range": 20,
+        "radius": 0.45,
+        "angle": 0,
+        "width": 1,
+        "poise_damage": 24,
+        "knockback_force": 1,
+        "launch_force": 0,
+        "knockdown": false,
+        "can_crit": true,
+        "conditions": [
+          {
+            "type": "weapon_family",
+            "value": [
+              "BOW"
+            ],
+            "op": "in"
+          }
+        ],
+        "effects": [],
+        "min_level": 2,
+        "projectile_speed": 26,
+        "pierce": 2
+      },
+      "srd_frontier:watchers_thrust": {
+        "id": "srd_frontier:watchers_thrust",
+        "name": "守望突刺",
+        "description": "长枪向前突刺并略微拖慢命中的敌人。",
+        "is_skill": true,
+        "presentation_type": "WEAPON_ACTION",
+        "startup": 0.22,
+        "active": 0.12,
+        "recovery": 0.3,
+        "cooldown": 8,
+        "costs": {
+          "Energy": 16
+        },
+        "gains": {},
+        "formula": {
+          "weapon": 0.8,
+          "STR": 5
+        },
+        "damage_type": "PHYSICAL",
+        "targeting": "LINE",
+        "range": 5.2,
+        "radius": 2.8,
+        "angle": 0,
+        "width": 1.0,
+        "poise_damage": 48,
+        "knockback_force": 1,
+        "launch_force": 0,
+        "knockdown": false,
+        "can_crit": true,
+        "conditions": [
+          {
+            "type": "weapon_family",
+            "value": [
+              "POLEARM"
+            ],
+            "op": "in"
+          }
+        ],
+        "effects": [
+          {
+            "type": "status",
+            "status": "slow",
+            "duration": 1.0
+          }
+        ],
+        "min_level": 3
+      },
+      "srd_frontier:cinder_bolt": {
+        "id": "srd_frontier:cinder_bolt",
+        "name": "余烬飞弹",
+        "description": "发射快速火弹，命中单体时造成火焰伤害。",
+        "is_skill": true,
+        "presentation_type": "CASTER_ACTION",
+        "startup": 0.16,
+        "active": 0.1,
+        "recovery": 0.24,
+        "cooldown": 4,
+        "costs": {
+          "Energy": 10
+        },
+        "gains": {},
+        "formula": {
+          "weapon": 0.75,
+          "INT": 5
+        },
+        "damage_type": "FIRE",
+        "targeting": "TARGET",
+        "range": 13,
+        "radius": 0.6,
+        "angle": 0,
+        "width": 1,
+        "poise_damage": 10,
+        "knockback_force": 1,
+        "launch_force": 0,
+        "knockdown": false,
+        "can_crit": true,
+        "conditions": [
+          {
+            "type": "weapon_family",
+            "value": [
+              "CASTER"
+            ],
+            "op": "in"
+          }
+        ],
+        "effects": [],
+        "min_level": 1,
+        "projectile_speed": 16,
+        "spell_rank": 1
+      },
+      "srd_frontier:blueglass_burst": {
+        "id": "srd_frontier:blueglass_burst",
+        "name": "蓝晶霜爆",
+        "description": "在指定区域引爆寒霜，造成轻伤并短暂减速。",
+        "is_skill": true,
+        "presentation_type": "CASTER_ACTION",
+        "startup": 0.22,
+        "active": 0.12,
+        "recovery": 0.28,
+        "cooldown": 9,
+        "costs": {
+          "Energy": 20
+        },
+        "gains": {},
+        "formula": {
+          "base": 12,
+          "weapon": 0.35,
+          "INT": 3
+        },
+        "damage_type": "ICE",
+        "targeting": "POINT",
+        "range": 12,
+        "radius": 2.8,
+        "angle": 0,
+        "width": 1,
+        "poise_damage": 12,
+        "knockback_force": 1,
+        "launch_force": 0,
+        "knockdown": false,
+        "can_crit": true,
+        "conditions": [
+          {
+            "type": "weapon_family",
+            "value": [
+              "CASTER"
+            ],
+            "op": "in"
+          }
+        ],
+        "effects": [
+          {
+            "type": "status",
+            "status": "slow",
+            "duration": 1.4
+          }
+        ],
+        "min_level": 3,
+        "shape": "CIRCLE",
+        "spell_rank": 2
+      },
+      "srd_frontier:thunderline": {
+        "id": "srd_frontier:thunderline",
+        "name": "雷纹直击",
+        "description": "向远处目标释放一道高伤单体雷击，冷却较长。",
+        "is_skill": true,
+        "presentation_type": "CASTER_ACTION",
+        "startup": 0.24,
+        "active": 0.1,
+        "recovery": 0.34,
+        "cooldown": 11,
+        "costs": {
+          "Energy": 35
+        },
+        "gains": {},
+        "formula": {
+          "base": 22,
+          "weapon": 0.65,
+          "INT": 5
+        },
+        "damage_type": "LIGHTNING",
+        "targeting": "TARGET",
+        "range": 14,
+        "radius": 0.7,
+        "angle": 0,
+        "width": 1,
+        "poise_damage": 32,
+        "knockback_force": 1,
+        "launch_force": 0,
+        "knockdown": false,
+        "can_crit": true,
+        "conditions": [
+          {
+            "type": "weapon_family",
+            "value": [
+              "CASTER"
+            ],
+            "op": "in"
+          }
+        ],
+        "effects": [],
+        "min_level": 5,
+        "projectile_speed": 22,
+        "spell_rank": 3
+      }
+    },
+    "passives": {
+      "srd_frontier:surefoot_reflex": {
+        "id": "srd_frontier:surefoot_reflex",
+        "name": "稳步余息",
+        "description": "精准闪避后恢复1点体力，可补回一次闪避所需的体力；每8秒最多触发一次。",
+        "event": "perfect_dodge",
+        "conditions": [],
+        "effects": [
+          {
+            "type": "resource",
+            "resource": "Stamina",
+            "amount": 1
+          }
+        ],
+        "cooldown": 8,
+        "min_level": 1
+      },
+      "srd_frontier:high_guard": {
+        "id": "srd_frontier:high_guard",
+        "name": "高举护势",
+        "description": "当前生命高于75%时，韧性提高8点；生命降至75%或以下时加成消失。",
+        "event": "stat_update",
+        "conditions": [
+          {
+            "type": "self_hp",
+            "value": 0.75,
+            "op": ">"
+          }
+        ],
+        "effects": [
+          {
+            "type": "modifier",
+            "stat": "Poise",
+            "value": 8
+          }
+        ],
+        "cooldown": 0,
+        "min_level": 1
+      }
+    }
+  },
+  "assets": {
+    "srd_frontier:reed_sabre_icon": {
+      "kind": "icon",
+      "path": "assets/reed-sabre-v1.png",
+      "width": 1254,
+      "height": 1254,
+      "sha256": "91b62c2b9260097a2d0e115731dd81ee74c161da51ddab7ca428ea7ba200a3bb",
+      "license": "AI-generated project artwork; no third-party license asserted",
+      "source": "Antigravity CLI generate_image then built-in imagegen transparent-background edit; see .work/luna_content_factory_20260930/jobs/reed_sabre_raw and postprocess records"
+    },
+    "srd_frontier:riveted_hauberk_icon": {
+      "kind": "icon",
+      "path": "assets/riveted-hauberk-v1.png",
+      "width": 1254,
+      "height": 1254,
+      "sha256": "88416b1bbd7ea27ffe540f8903613c7abb14f411d8cb400bebec70cceb6f7d91",
+      "license": "AI-generated project artwork; no third-party license asserted",
+      "source": "Antigravity CLI generate_image then built-in imagegen transparent-background edit; see .work/luna_content_factory_20260930/jobs/riveted_hauberk_raw and postprocess records"
+    },
+    "srd_frontier:field_medic_draught_icon": {
+      "kind": "icon",
+      "path": "assets/field-medic-draught-v1.png",
+      "width": 1254,
+      "height": 1254,
+      "sha256": "aa19b73ba266c982fad5e485f63bc84b563a562f695eb879f0b2ca62879985ea",
+      "license": "AI-generated project artwork; no third-party license asserted",
+      "source": "Antigravity CLI generate_image then built-in imagegen transparent-background edit; see .work/luna_content_factory_20260930/jobs/field_medic_draught_raw and postprocess records"
+    },
+    "srd_frontier:blueglass_burst_icon": {
+      "kind": "icon",
+      "path": "assets/blueglass-burst-v1.png",
+      "width": 1254,
+      "height": 1254,
+      "sha256": "a6887b5068d7d87acfd09d229de53b0b05addc02e5ae61a4a38a6509049456f5",
+      "license": "AI-generated project artwork; no third-party license asserted",
+      "source": "Antigravity CLI generate_image then built-in imagegen transparent-background edit; see .work/luna_content_factory_20260930/jobs/blueglass_burst_raw and postprocess records"
+    },
+    "srd_frontier:trail_dagger_icon": {
+      "kind": "icon",
+      "path": "assets/trail-dagger-v1.png",
+      "width": 1254,
+      "height": 1254,
+      "sha256": "6560c01c1841fc8ab9279bb5220f318efecbeb7af6247b41dabde1b64baa398c",
+      "license": "AI-generated project artwork; no third-party license asserted",
+      "source": "Antigravity CLI generate_image followed by built-in imagegen transparent-background edit; see .work/luna_content_factory_20260930/jobs/trail_dagger_raw and postprocess records"
+    },
+    "srd_frontier:watch_spear_icon": {
+      "kind": "icon",
+      "path": "assets/watch-spear-v1.png",
+      "width": 1254,
+      "height": 1254,
+      "sha256": "1ca971702cc3272537a79ac95c0415455a0e8796618ebf69f4272fbcd33d36dd",
+      "license": "AI-generated project artwork; no third-party license asserted",
+      "source": "Antigravity CLI generate_image followed by built-in imagegen transparent-background edit; see .work/luna_content_factory_20260930/jobs/watch_spear_raw and postprocess records"
+    },
+    "srd_frontier:longpath_bow_icon": {
+      "kind": "icon",
+      "path": "assets/longpath-bow-v1.png",
+      "width": 1254,
+      "height": 1254,
+      "sha256": "5a47a47671f1539f2ae3fdb5541165bcf18e5de9226c85753a836a3ef0e9e80a",
+      "license": "AI-generated project artwork; no third-party license asserted",
+      "source": "Antigravity CLI generate_image followed by built-in imagegen transparent-background edit; see .work/luna_content_factory_20260930/jobs/longpath_bow_raw and postprocess records"
+    }
+  },
+  "bindings": [
+    {
+      "catalog": "weapons",
+      "id": "srd_frontier:longpath_bow",
+      "assets": {
+        "icon": "srd_frontier:longpath_bow_icon"
+      }
+    },
+    {
+      "catalog": "weapons",
+      "id": "srd_frontier:reed_sabre",
+      "assets": {
+        "icon": "srd_frontier:reed_sabre_icon"
+      }
+    },
+    {
+      "catalog": "weapons",
+      "id": "srd_frontier:trail_dagger",
+      "assets": {
+        "icon": "srd_frontier:trail_dagger_icon"
+      }
+    },
+    {
+      "catalog": "weapons",
+      "id": "srd_frontier:watch_spear",
+      "assets": {
+        "icon": "srd_frontier:watch_spear_icon"
+      }
+    },
+    {
+      "catalog": "equipment",
+      "id": "srd_frontier:riveted_hauberk",
+      "assets": {
+        "icon": "srd_frontier:riveted_hauberk_icon"
+      }
+    },
+    {
+      "catalog": "items",
+      "id": "srd_frontier:field_medic_draught",
+      "assets": {
+        "icon": "srd_frontier:field_medic_draught_icon"
+      }
+    },
+    {
+      "catalog": "skills",
+      "id": "srd_frontier:blueglass_burst",
+      "assets": {
+        "icon": "srd_frontier:blueglass_burst_icon"
+      }
+    }
+  ],
+  "career_grants": [
+    {
+      "career": "warrior",
+      "skills": [
+        "srd_frontier:briar_sweep",
+        "srd_frontier:longpath_piercer",
+        "srd_frontier:watchers_thrust"
+      ]
+    },
+    {
+      "career": "mage",
+      "skills": [
+        "srd_frontier:cinder_bolt",
+        "srd_frontier:blueglass_burst",
+        "srd_frontier:thunderline"
+      ]
+    }
+  ]
+}

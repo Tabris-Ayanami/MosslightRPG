@@ -1,0 +1,297 @@
+{
+  "format_version": 1,
+  "pack_id": "willow_watch",
+  "version": "0.3.0",
+  "description": "柳径哨望六类内容的获取途径接入版本：草饮由风铃杂货铺出售，兜帽由林间巡逻委托奖励，佩剑由重甲守卫掉落。沿用0.2.0六项数值与六张原图；职业、主动技和被动经既有成长获得，尚待整体平衡验收。",
+  "catalogs": {
+    "items": {
+      "willow_watch:herb_brew": {
+        "id": "willow_watch:herb_brew",
+        "name": "柳叶草饮",
+        "description": "采摘自柳林溪畔的草药饮，恢复最大生命的 20% 和额外 20 点生命。",
+        "category": "consumable",
+        "effect": "resource",
+        "resource": "HP",
+        "fraction": 0.2,
+        "amount": 20,
+        "cooldown": 8
+      }
+    },
+    "weapons": {
+      "willow_watch:willow_blade": {
+        "id": "willow_watch:willow_blade",
+        "name": "柳梢轻佩剑",
+        "weapon_type": "Sword",
+        "animation_family": "SINGLE_BLADE",
+        "quality": "Fine",
+        "weapon_scaling": 26,
+        "model_id": "sword",
+        "visual": {
+          "style": "sword",
+          "color": "#7E9F7B"
+        },
+        "requirements": [
+          {
+            "type": "stat",
+            "stat": "STR",
+            "op": ">=",
+            "value": 11
+          }
+        ],
+        "conditions": [
+          {
+            "type": "stat",
+            "stat": "STR",
+            "op": ">=",
+            "value": 11
+          }
+        ],
+        "special_effects": []
+      }
+    },
+    "equipment": {
+      "willow_watch:watch_hood": {
+        "id": "willow_watch:watch_hood",
+        "name": "哨望编织兜帽",
+        "slot": "head",
+        "visual": {
+          "style": "hood",
+          "color": "#537358"
+        },
+        "modifiers": {
+          "PER": 1,
+          "Armor": 2
+        },
+        "passives": [],
+        "requirements": [],
+        "conditions": []
+      }
+    },
+    "skills": {
+      "willow_watch:willow_strike": {
+        "id": "willow_watch:willow_strike",
+        "name": "拂柳斩",
+        "description": "挥剑斜掠如弱柳拂风，击中前方目标并使其减速。",
+        "is_skill": true,
+        "presentation_type": "WEAPON_ACTION",
+        "startup": 0.25,
+        "active": 0.14,
+        "recovery": 0.35,
+        "cooldown": 6,
+        "costs": {
+          "Energy": 20
+        },
+        "gains": {},
+        "formula": {
+          "weapon": 0.85,
+          "STR": 4
+        },
+        "damage_type": "PHYSICAL",
+        "targeting": "CONE",
+        "range": 3,
+        "angle": 85,
+        "poise_damage": 20,
+        "can_crit": true,
+        "conditions": [
+          {
+            "type": "weapon_family",
+            "value": [
+              "SINGLE_BLADE"
+            ],
+            "op": "in"
+          }
+        ],
+        "effects": [
+          {
+            "type": "status",
+            "status": "slow",
+            "duration": 1.25
+          }
+        ],
+        "min_level": 3
+      }
+    },
+    "passives": {
+      "willow_watch:willow_step": {
+        "id": "willow_watch:willow_step",
+        "name": "随风步",
+        "event": "perfect_dodge",
+        "conditions": [],
+        "effects": [
+          {
+            "type": "resource",
+            "resource": "Energy",
+            "amount": 10
+          }
+        ],
+        "cooldown": 6,
+        "min_level": 3
+      }
+    },
+    "careers": {
+      "willow_watch:willow_sentinel": {
+        "id": "willow_watch:willow_sentinel",
+        "name": "柳野哨卫",
+        "base_career": "warrior",
+        "parent_career": "warrior",
+        "required_level": 3,
+        "max_level": 10,
+        "stats": {},
+        "formulas": {},
+        "proficiencies": [],
+        "weapon_proficiencies": [],
+        "next_careers": [],
+        "skills": [
+          "willow_watch:willow_strike"
+        ],
+        "passives": [
+          "willow_watch:willow_step"
+        ],
+        "default_sets": []
+      }
+    }
+  },
+  "career_links": [
+    {
+      "parent": "warrior",
+      "child": "willow_watch:willow_sentinel"
+    }
+  ],
+  "career_grants": [
+    {
+      "career": "warrior",
+      "skills": [
+        "willow_watch:willow_strike"
+      ]
+    }
+  ],
+  "assets": {
+    "willow_watch:herb_brew_icon": {
+      "kind": "icon",
+      "path": "assets/herb-brew-v1.png",
+      "width": 1254,
+      "height": 1254,
+      "sha256": "b0b73563bbb2bbd43604c84dce0d93f969e1aaac1ff1916d801d1227aad46d98",
+      "license": "AI-generated project artwork; no third-party license asserted",
+      "source": "Reused unchanged from willow_watch 0.2.0; original evidence under ../0.2.0/provenance. See provenance/reuse.json."
+    },
+    "willow_watch:willow_blade_icon": {
+      "kind": "icon",
+      "path": "assets/willow-blade-v1.png",
+      "width": 1254,
+      "height": 1254,
+      "sha256": "798c522314ed5584c47d51487041520abe829a43d941c1d3530b87bc127a4185",
+      "license": "AI-generated project artwork; no third-party license asserted",
+      "source": "Reused unchanged from willow_watch 0.2.0; original evidence under ../0.2.0/provenance. See provenance/reuse.json."
+    },
+    "willow_watch:watch_hood_icon": {
+      "kind": "icon",
+      "path": "assets/watch-hood-v1.png",
+      "width": 1254,
+      "height": 1254,
+      "sha256": "887e4b35985ba118cb24b0844489e0b0913f8f6d74b3cea7a7475e6e86ed6eb7",
+      "license": "AI-generated project artwork; no third-party license asserted",
+      "source": "Reused unchanged from willow_watch 0.2.0; original evidence under ../0.2.0/provenance. See provenance/reuse.json."
+    },
+    "willow_watch:willow_strike_icon": {
+      "kind": "icon",
+      "path": "assets/willow-strike-v1.png",
+      "width": 1254,
+      "height": 1254,
+      "sha256": "6d9dac13fe358c2d74798044ca81e11b263283088102c0eb59817f8140f01691",
+      "license": "AI-generated project artwork; no third-party license asserted",
+      "source": "Reused unchanged from willow_watch 0.2.0; original evidence under ../0.2.0/provenance. See provenance/reuse.json."
+    },
+    "willow_watch:willow_sentinel_icon": {
+      "kind": "icon",
+      "path": "assets/willow-sentinel-v1.png",
+      "width": 1254,
+      "height": 1254,
+      "sha256": "6e97c95aaf9e2372b651b9af41f0dee4cc1214f2e6221e77f3a9d9d7a6898843",
+      "license": "AI-generated project artwork; no third-party license asserted",
+      "source": "Reused unchanged from willow_watch 0.2.0; original evidence under ../0.2.0/provenance. See provenance/reuse.json."
+    },
+    "willow_watch:willow_step_icon": {
+      "kind": "icon",
+      "path": "assets/willow-step-v1.png",
+      "width": 1254,
+      "height": 1254,
+      "sha256": "1d701014b63463427089bc2046a6f1568c7eadff393b5ca228aa7de9763a4f64",
+      "license": "AI-generated project artwork; no third-party license asserted",
+      "source": "Reused unchanged from willow_watch 0.2.0; original evidence under ../0.2.0/provenance. See provenance/reuse.json."
+    }
+  },
+  "bindings": [
+    {
+      "catalog": "items",
+      "id": "willow_watch:herb_brew",
+      "assets": {
+        "icon": "willow_watch:herb_brew_icon"
+      }
+    },
+    {
+      "catalog": "weapons",
+      "id": "willow_watch:willow_blade",
+      "assets": {
+        "icon": "willow_watch:willow_blade_icon"
+      }
+    },
+    {
+      "catalog": "equipment",
+      "id": "willow_watch:watch_hood",
+      "assets": {
+        "icon": "willow_watch:watch_hood_icon"
+      }
+    },
+    {
+      "catalog": "skills",
+      "id": "willow_watch:willow_strike",
+      "assets": {
+        "icon": "willow_watch:willow_strike_icon"
+      }
+    },
+    {
+      "catalog": "careers",
+      "id": "willow_watch:willow_sentinel",
+      "assets": {
+        "icon": "willow_watch:willow_sentinel_icon"
+      }
+    },
+    {
+      "catalog": "passives",
+      "id": "willow_watch:willow_step",
+      "assets": {
+        "icon": "willow_watch:willow_step_icon"
+      }
+    }
+  ],
+  "acquisition": {
+    "shops": {
+      "village_supply": {
+        "willow_watch:herb_brew": {
+          "buy_price": 30,
+          "sell_price": 8,
+          "stock": 6
+        },
+        "willow_watch:willow_blade": {
+          "sell_price": 45,
+          "stock": 0
+        },
+        "willow_watch:watch_hood": {
+          "sell_price": 20,
+          "stock": 0
+        }
+      }
+    },
+    "quests": {
+      "village_patrol": {
+        "willow_watch:watch_hood": 1
+      }
+    },
+    "enemy_drops": {
+      "heavy_guard": {
+        "willow_watch:willow_blade": 1
+      }
+    }
+  }
+}

@@ -1,0 +1,20 @@
+{
+  "version": 1,
+  "objects": {
+    "prop.village_supply_chest": {
+      "id": "prop.village_supply_chest", "kind": "chest", "name": "村庄补给箱",
+      "position": [4.5, 2.2, -38.5], "rotation_y": 0.15,
+      "items": {"healing_potion": 2, "qi_potion": 1}
+    },
+    "prop.forest_exploration_chest": {
+      "id": "prop.forest_exploration_chest", "kind": "chest", "name": "林间探索箱",
+      "position": [36.3, 2.2, -2.0], "rotation_y": -0.35,
+      "items": {"healing_potion": 1, "fire_bomb": 1}
+    },
+    "prop.garden_waystone": {
+      "id": "prop.garden_waystone", "kind": "shrine", "name": "苔光记录石",
+      "position": [4.4, 2.2, 5.7], "rotation_y": 0.0,
+      "checkpoint": [1.6, 2.35, 4.8]
+    }
+  }
+}

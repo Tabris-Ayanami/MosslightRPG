@@ -1,0 +1,1391 @@
+{
+  "warrior_whirlwind": {
+    "id": "warrior_whirlwind",
+    "name": "回旋斩",
+    "is_skill": true,
+    "presentation_type": "WEAPON_ACTION",
+    "startup": 0.18,
+    "active": 0.12,
+    "recovery": 0.28,
+    "cooldown": 5,
+    "costs": {
+      "Energy": 20
+    },
+    "gains": {},
+    "formula": {
+      "base": 0,
+      "weapon": 1.15,
+      "STR": 6
+    },
+    "damage_type": "PHYSICAL",
+    "targeting": "CIRCLE",
+    "range": 3.2,
+    "radius": 3,
+    "angle": 90,
+    "width": 1,
+    "poise_damage": 30,
+    "knockback_force": 2,
+    "launch_force": 0,
+    "knockdown": false,
+    "can_crit": true,
+    "conditions": [
+      {
+        "type": "weapon_family",
+        "value": [
+          "SINGLE_BLADE",
+          "SHORT_WEAPON"
+        ],
+        "op": "in"
+      }
+    ],
+    "effects": [],
+    "min_level": 1,
+    "dual_sequence": {
+      "template": "spin",
+      "origin": "action_origin"
+    }
+  },
+  "warrior_thrust": {
+    "id": "warrior_thrust",
+    "name": "前刺",
+    "is_skill": true,
+    "presentation_type": "WEAPON_ACTION",
+    "startup": 0.18,
+    "active": 0.12,
+    "recovery": 0.28,
+    "cooldown": 4,
+    "costs": {},
+    "gains": {},
+    "formula": {
+      "base": 0,
+      "weapon": 1.05,
+      "STR": 5,
+      "DEX": 2
+    },
+    "damage_type": "PHYSICAL",
+    "targeting": "LINE",
+    "range": 4,
+    "radius": 3.2,
+    "angle": 90,
+    "width": 1.25,
+    "poise_damage": 20,
+    "knockback_force": 2,
+    "launch_force": 0,
+    "knockdown": false,
+    "can_crit": true,
+    "conditions": [
+      {
+        "type": "weapon_family",
+        "value": [
+          "SINGLE_BLADE",
+          "SHORT_WEAPON"
+        ],
+        "op": "in"
+      }
+    ],
+    "effects": [
+      {
+        "type": "dash",
+        "distance": 3,
+        "target": "self"
+      }
+    ],
+    "min_level": 1,
+    "guard_window": {
+      "start": 0,
+      "end": 0.18,
+      "perfect_window": 0.1,
+      "angle": 140,
+      "physical_reduction": 0.8,
+      "elemental_reduction": 0.35,
+      "stamina_cost": 1
+    },
+    "dual_sequence": {
+      "template": "thrust",
+      "origin": "after_movement"
+    }
+  },
+  "warrior_impact": {
+    "id": "warrior_impact",
+    "name": "冲击",
+    "is_skill": true,
+    "presentation_type": "WEAPON_ACTION",
+    "startup": 0.18,
+    "active": 0.12,
+    "recovery": 0.28,
+    "cooldown": 8,
+    "costs": {
+      "Energy": 20
+    },
+    "gains": {},
+    "formula": {
+      "base": 0,
+      "weapon": 0.65,
+      "STR": 4
+    },
+    "damage_type": "PHYSICAL",
+    "targeting": "CONE",
+    "range": 3.2,
+    "radius": 3.2,
+    "angle": 100,
+    "width": 1,
+    "poise_damage": 65,
+    "knockback_force": 2,
+    "launch_force": 0,
+    "knockdown": false,
+    "can_crit": true,
+    "conditions": [],
+    "effects": [
+      {
+        "type": "status",
+        "status": "physical_vulnerability",
+        "duration": 3
+      }
+    ],
+    "min_level": 1,
+    "dual_sequence": {
+      "template": "slash",
+      "origin": "action_origin"
+    }
+  },
+  "warrior_sword_wave": {
+    "id": "warrior_sword_wave",
+    "name": "剑气",
+    "is_skill": true,
+    "presentation_type": "WEAPON_ACTION",
+    "startup": 0.18,
+    "active": 0.12,
+    "recovery": 0.28,
+    "cooldown": 10,
+    "costs": {
+      "Energy": 40
+    },
+    "gains": {},
+    "formula": {
+      "base": 0,
+      "weapon": 0.9,
+      "STR": 5,
+      "PER": 2
+    },
+    "damage_type": "PHYSICAL",
+    "targeting": "DIRECTION",
+    "range": 8,
+    "radius": 3.2,
+    "angle": 90,
+    "width": 1.1,
+    "poise_damage": 20,
+    "knockback_force": 2,
+    "launch_force": 0,
+    "knockdown": false,
+    "can_crit": true,
+    "conditions": [
+      {
+        "type": "weapon_family",
+        "value": [
+          "SINGLE_BLADE"
+        ],
+        "op": "in"
+      }
+    ],
+    "effects": [],
+    "projectile_speed": 15,
+    "pierce": 0,
+    "min_level": 1,
+    "dual_sequence": {
+      "template": "slash",
+      "origin": "action_origin"
+    }
+  },
+  "swordsman_fan_slash": {
+    "id": "swordsman_fan_slash",
+    "name": "扇形斩",
+    "is_skill": true,
+    "presentation_type": "WEAPON_ACTION",
+    "startup": 0.18,
+    "active": 0.12,
+    "recovery": 0.28,
+    "cooldown": 7,
+    "costs": {
+      "Energy": 20
+    },
+    "gains": {},
+    "formula": {
+      "base": 0,
+      "weapon": 1.35,
+      "STR": 7
+    },
+    "damage_type": "PHYSICAL",
+    "targeting": "CONE",
+    "range": 3.5,
+    "radius": 3.5,
+    "angle": 120,
+    "width": 1,
+    "poise_damage": 35,
+    "knockback_force": 2,
+    "launch_force": 0,
+    "knockdown": false,
+    "can_crit": true,
+    "conditions": [
+      {
+        "type": "weapon_family",
+        "value": [
+          "SINGLE_BLADE"
+        ],
+        "op": "in"
+      }
+    ],
+    "effects": [],
+    "min_level": 2,
+    "dual_sequence": {
+      "template": "slash",
+      "origin": "action_origin"
+    }
+  },
+  "duelist_finisher": {
+    "id": "duelist_finisher",
+    "name": "终结刺",
+    "is_skill": true,
+    "presentation_type": "WEAPON_ACTION",
+    "startup": 0.18,
+    "active": 0.12,
+    "recovery": 0.28,
+    "cooldown": 9,
+    "costs": {
+      "Energy": 20
+    },
+    "gains": {},
+    "formula": {
+      "base": 0,
+      "weapon": 1.6,
+      "DEX": 7,
+      "STR": 4
+    },
+    "damage_type": "PHYSICAL",
+    "targeting": "TARGET",
+    "range": 3,
+    "radius": 3.2,
+    "angle": 90,
+    "width": 1,
+    "poise_damage": 20,
+    "knockback_force": 2,
+    "launch_force": 0,
+    "knockdown": false,
+    "can_crit": true,
+    "conditions": [
+      {
+        "type": "weapon_family",
+        "value": [
+          "SHORT_WEAPON"
+        ],
+        "op": "in"
+      },
+      {
+        "type": "target_hp",
+        "value": 0.3,
+        "op": "<"
+      }
+    ],
+    "effects": [],
+    "crit_multiplier_bonus": 0.5,
+    "min_level": 2
+  },
+  "rogue_shadow_strike": {
+    "id": "rogue_shadow_strike",
+    "name": "影袭",
+    "is_skill": true,
+    "presentation_type": "WEAPON_ACTION",
+    "startup": 0.18,
+    "active": 0.12,
+    "recovery": 0.28,
+    "cooldown": 6,
+    "costs": {
+      "Energy": 20
+    },
+    "gains": {},
+    "formula": {
+      "base": 0,
+      "weapon": 1,
+      "DEX": 7
+    },
+    "damage_type": "PHYSICAL",
+    "targeting": "CONE",
+    "range": 2.7,
+    "radius": 2.7,
+    "angle": 75,
+    "width": 1,
+    "poise_damage": 20,
+    "knockback_force": 2,
+    "launch_force": 0,
+    "knockdown": false,
+    "can_crit": true,
+    "conditions": [
+      {
+        "type": "weapon_family",
+        "value": [
+          "SHORT_WEAPON"
+        ],
+        "op": "in"
+      }
+    ],
+    "effects": [],
+    "damage_modifiers": [
+      {
+        "conditions": [
+          {
+            "type": "behind_target",
+            "value": true
+          }
+        ],
+        "damage_bonus": 0.2
+      }
+    ],
+    "min_level": 1
+  },
+  "rogue_precision_shot": {
+    "id": "rogue_precision_shot",
+    "name": "精准射击",
+    "is_skill": true,
+    "presentation_type": "WEAPON_ACTION",
+    "startup": 0.18,
+    "active": 0.12,
+    "recovery": 0.28,
+    "cooldown": 5,
+    "costs": {
+      "Energy": 20
+    },
+    "gains": {},
+    "formula": {
+      "base": 0,
+      "weapon": 1.35,
+      "DEX": 6,
+      "PER": 3
+    },
+    "damage_type": "PHYSICAL",
+    "targeting": "DIRECTION",
+    "range": 18,
+    "radius": 3.2,
+    "angle": 90,
+    "width": 0.45,
+    "poise_damage": 20,
+    "knockback_force": 2,
+    "launch_force": 0,
+    "knockdown": false,
+    "can_crit": true,
+    "conditions": [
+      {
+        "type": "weapon_family",
+        "value": [
+          "BOW"
+        ],
+        "op": "in"
+      }
+    ],
+    "effects": [],
+    "projectile_speed": 24,
+    "pierce": 0,
+    "min_level": 1
+  },
+  "rogue_smoke": {
+    "id": "rogue_smoke",
+    "name": "烟幕",
+    "is_skill": true,
+    "presentation_type": "VFX_ONLY",
+    "startup": 0.18,
+    "active": 0.12,
+    "recovery": 0.28,
+    "cooldown": 14,
+    "costs": {
+      "Energy": 20
+    },
+    "gains": {},
+    "formula": {
+      "base": 0,
+      "weapon": 0
+    },
+    "damage_type": "PHYSICAL",
+    "targeting": "SELF",
+    "range": 3.2,
+    "radius": 4,
+    "angle": 90,
+    "width": 1,
+    "poise_damage": 0,
+    "knockback_force": 0,
+    "launch_force": 0,
+    "knockdown": false,
+    "can_crit": false,
+    "conditions": [],
+    "effects": [
+      {
+        "type": "disengage",
+        "normal_enemies_only": true
+      },
+      {
+        "type": "status",
+        "status": "stealth",
+        "duration": 2.5,
+        "target": "self"
+      }
+    ],
+    "min_level": 1
+  },
+  "rogue_throwing_blade": {
+    "id": "rogue_throwing_blade",
+    "name": "飞刃",
+    "is_skill": true,
+    "presentation_type": "WEAPON_ACTION",
+    "startup": 0.18,
+    "active": 0.12,
+    "recovery": 0.28,
+    "cooldown": 4,
+    "costs": {},
+    "gains": {},
+    "formula": {
+      "base": 0,
+      "weapon": 0.7,
+      "DEX": 5,
+      "PER": 2
+    },
+    "damage_type": "PHYSICAL",
+    "targeting": "DIRECTION",
+    "range": 10,
+    "radius": 3.2,
+    "angle": 90,
+    "width": 0.45,
+    "poise_damage": 20,
+    "knockback_force": 2,
+    "launch_force": 0,
+    "knockdown": false,
+    "can_crit": true,
+    "conditions": [
+      {
+        "type": "weapon_family",
+        "value": [
+          "SHORT_WEAPON"
+        ],
+        "op": "in"
+      }
+    ],
+    "effects": [],
+    "projectile_speed": 20,
+    "pierce": 0,
+    "min_level": 1
+  },
+  "shadowblade_execute": {
+    "id": "shadowblade_execute",
+    "name": "处决",
+    "is_skill": true,
+    "presentation_type": "WEAPON_ACTION",
+    "startup": 0.18,
+    "active": 0.12,
+    "recovery": 0.28,
+    "cooldown": 8,
+    "costs": {
+      "Energy": 20
+    },
+    "gains": {},
+    "formula": {
+      "base": 0,
+      "weapon": 1.7,
+      "DEX": 9
+    },
+    "damage_type": "PHYSICAL",
+    "targeting": "TARGET",
+    "range": 3,
+    "radius": 3.2,
+    "angle": 90,
+    "width": 1,
+    "poise_damage": 20,
+    "knockback_force": 2,
+    "launch_force": 0,
+    "knockdown": false,
+    "can_crit": true,
+    "conditions": [
+      {
+        "type": "weapon_family",
+        "value": [
+          "SHORT_WEAPON"
+        ],
+        "op": "in"
+      },
+      {
+        "type": "target_hp",
+        "value": 0.3,
+        "op": "<"
+      }
+    ],
+    "effects": [],
+    "min_level": 2
+  },
+  "ranger_piercing_arrow": {
+    "id": "ranger_piercing_arrow",
+    "name": "穿透箭",
+    "is_skill": true,
+    "presentation_type": "WEAPON_ACTION",
+    "startup": 0.18,
+    "active": 0.12,
+    "recovery": 0.28,
+    "cooldown": 8,
+    "costs": {
+      "Energy": 20
+    },
+    "gains": {},
+    "formula": {
+      "base": 0,
+      "weapon": 1.3,
+      "DEX": 7,
+      "PER": 3
+    },
+    "damage_type": "PHYSICAL",
+    "targeting": "DIRECTION",
+    "range": 20,
+    "radius": 3.2,
+    "angle": 90,
+    "width": 0.5,
+    "poise_damage": 20,
+    "knockback_force": 2,
+    "launch_force": 0,
+    "knockdown": false,
+    "can_crit": true,
+    "conditions": [
+      {
+        "type": "weapon_family",
+        "value": [
+          "BOW"
+        ],
+        "op": "in"
+      }
+    ],
+    "effects": [],
+    "projectile_speed": 25,
+    "pierce": 99,
+    "min_level": 2
+  },
+  "ranger_arrow_rain": {
+    "id": "ranger_arrow_rain",
+    "name": "箭雨",
+    "is_skill": true,
+    "presentation_type": "WEAPON_ACTION",
+    "startup": 0.18,
+    "active": 0.12,
+    "recovery": 0.28,
+    "cooldown": 12,
+    "costs": {
+      "Energy": 40
+    },
+    "gains": {},
+    "formula": {
+      "base": 0,
+      "weapon": 0.45,
+      "DEX": 2,
+      "PER": 1
+    },
+    "damage_type": "PHYSICAL",
+    "targeting": "POINT",
+    "range": 16,
+    "radius": 3.2,
+    "angle": 90,
+    "width": 1,
+    "poise_damage": 15,
+    "knockback_force": 0,
+    "launch_force": 0,
+    "knockdown": false,
+    "can_crit": true,
+    "conditions": [
+      {
+        "type": "weapon_family",
+        "value": [
+          "BOW"
+        ],
+        "op": "in"
+      }
+    ],
+    "effects": [],
+    "shape": "CIRCLE",
+    "duration": 3,
+    "tick_interval": 1,
+    "waves": 3,
+    "min_level": 2
+  },
+  "barbarian_leap": {
+    "id": "barbarian_leap",
+    "name": "跳劈",
+    "is_skill": true,
+    "presentation_type": "WEAPON_ACTION",
+    "startup": 0.82,
+    "active": 0.12,
+    "recovery": 0.4,
+    "cooldown": 8,
+    "costs": {
+      "Energy": 20
+    },
+    "gains": {},
+    "formula": {
+      "base": 0,
+      "weapon": 1.6,
+      "STR": 8
+    },
+    "damage_type": "PHYSICAL",
+    "targeting": "TARGET",
+    "range": 6.0,
+    "width": 1,
+    "poise_damage": 80,
+    "knockback_force": 4,
+    "launch_force": 0,
+    "knockdown": false,
+    "can_crit": true,
+    "conditions": [
+      {
+        "type": "weapon_family",
+        "value": [
+          "POLEARM",
+          "HEAVY_2H"
+        ],
+        "op": "in"
+      }
+    ],
+    "effects": [],
+    "animation_id": "leap",
+    "min_level": 1,
+    "hyper_armor": {
+      "start": 0,
+      "end": 0.92
+    },
+    "target_radius": 0.8,
+    "leap_motion": true,
+    "description": "锁定一个敌人，跃起接近后劈落。只命中选定目标；路径受阻或目标逃离落点时不会命中。"
+  },
+  "barbarian_fan_slash": {
+    "id": "barbarian_fan_slash",
+    "name": "扇形斩",
+    "is_skill": true,
+    "presentation_type": "WEAPON_ACTION",
+    "startup": 0.18,
+    "active": 0.12,
+    "recovery": 0.28,
+    "cooldown": 6,
+    "costs": {
+      "Energy": 20
+    },
+    "gains": {},
+    "formula": {
+      "base": 0,
+      "weapon": 1.3,
+      "STR": 6
+    },
+    "damage_type": "PHYSICAL",
+    "targeting": "CONE",
+    "range": 4,
+    "radius": 4,
+    "angle": 140,
+    "width": 1,
+    "poise_damage": 50,
+    "knockback_force": 2,
+    "launch_force": 0,
+    "knockdown": false,
+    "can_crit": true,
+    "conditions": [
+      {
+        "type": "weapon_family",
+        "value": [
+          "POLEARM",
+          "HEAVY_2H"
+        ],
+        "op": "in"
+      }
+    ],
+    "effects": [],
+    "min_level": 1
+  },
+  "barbarian_blood_rage": {
+    "id": "barbarian_blood_rage",
+    "name": "血怒",
+    "is_skill": true,
+    "presentation_type": "VFX_ONLY",
+    "startup": 0.18,
+    "active": 0.12,
+    "recovery": 0.28,
+    "cooldown": 16,
+    "costs": {},
+    "gains": {},
+    "formula": {
+      "base": 0,
+      "weapon": 0
+    },
+    "damage_type": "PHYSICAL",
+    "targeting": "SELF",
+    "range": 3.2,
+    "radius": 3.2,
+    "angle": 90,
+    "width": 1,
+    "poise_damage": 0,
+    "knockback_force": 0,
+    "launch_force": 0,
+    "knockdown": false,
+    "can_crit": false,
+    "conditions": [],
+    "effects": [
+      {
+        "type": "hp_percent",
+        "value": -0.08,
+        "target": "self",
+        "basis": "current"
+      },
+      {
+        "type": "resource",
+        "resource": "Energy",
+        "amount": 40,
+        "target": "self"
+      },
+      {
+        "type": "status",
+        "status": "blood_rage",
+        "duration": 6,
+        "target": "self"
+      }
+    ],
+    "min_level": 1
+  },
+  "barbarian_impact": {
+    "id": "barbarian_impact",
+    "name": "冲击",
+    "is_skill": true,
+    "presentation_type": "WEAPON_ACTION",
+    "startup": 0.18,
+    "active": 0.12,
+    "recovery": 0.28,
+    "cooldown": 9,
+    "costs": {
+      "Energy": 20
+    },
+    "gains": {},
+    "formula": {
+      "base": 0,
+      "weapon": 0.8,
+      "STR": 5
+    },
+    "damage_type": "PHYSICAL",
+    "targeting": "CONE",
+    "range": 3.2,
+    "radius": 3.2,
+    "angle": 100,
+    "width": 1,
+    "poise_damage": 90,
+    "knockback_force": 5,
+    "launch_force": 0,
+    "knockdown": false,
+    "can_crit": true,
+    "conditions": [],
+    "effects": [],
+    "min_level": 1
+  },
+  "berserker_quake": {
+    "id": "berserker_quake",
+    "name": "地震",
+    "is_skill": true,
+    "presentation_type": "WEAPON_ACTION",
+    "startup": 0.38,
+    "active": 0.12,
+    "recovery": 0.28,
+    "cooldown": 12,
+    "costs": {
+      "Energy": 40
+    },
+    "gains": {},
+    "formula": {
+      "base": 0,
+      "weapon": 1,
+      "STR": 7
+    },
+    "damage_type": "PHYSICAL",
+    "targeting": "CIRCLE",
+    "range": 3.2,
+    "radius": 4.2,
+    "angle": 90,
+    "width": 1,
+    "poise_damage": 110,
+    "knockback_force": 4,
+    "launch_force": 0,
+    "knockdown": true,
+    "can_crit": true,
+    "conditions": [
+      {
+        "type": "weapon_family",
+        "value": [
+          "HEAVY_2H",
+          "POLEARM"
+        ],
+        "op": "in"
+      }
+    ],
+    "effects": [],
+    "min_level": 2,
+    "description": "以双手武器震击地面，攻击周围敌人。巨斧、长枪或双手大剑均可施放。"
+  },
+  "vanguard_launch": {
+    "id": "vanguard_launch",
+    "name": "挑飞",
+    "is_skill": true,
+    "presentation_type": "WEAPON_ACTION",
+    "startup": 0.18,
+    "active": 0.12,
+    "recovery": 0.28,
+    "cooldown": 7,
+    "costs": {
+      "Energy": 20
+    },
+    "gains": {},
+    "formula": {
+      "base": 0,
+      "weapon": 0.85,
+      "STR": 5
+    },
+    "damage_type": "PHYSICAL",
+    "targeting": "LINE",
+    "range": 4.5,
+    "radius": 3.2,
+    "angle": 90,
+    "width": 1.7,
+    "poise_damage": 75,
+    "knockback_force": 2,
+    "launch_force": 6,
+    "knockdown": false,
+    "can_crit": true,
+    "conditions": [
+      {
+        "type": "weapon_family",
+        "value": [
+          "POLEARM"
+        ],
+        "op": "in"
+      }
+    ],
+    "effects": [],
+    "min_level": 2
+  },
+  "vanguard_piercing_thrust": {
+    "id": "vanguard_piercing_thrust",
+    "name": "贯阵前刺",
+    "is_skill": true,
+    "presentation_type": "WEAPON_ACTION",
+    "startup": 0.18,
+    "active": 0.12,
+    "recovery": 0.28,
+    "cooldown": 9,
+    "costs": {
+      "Energy": 20
+    },
+    "gains": {},
+    "formula": {
+      "base": 0,
+      "weapon": 1.25,
+      "STR": 6
+    },
+    "damage_type": "PHYSICAL",
+    "targeting": "LINE",
+    "range": 6.5,
+    "radius": 3.2,
+    "angle": 90,
+    "width": 1.5,
+    "poise_damage": 45,
+    "knockback_force": 2,
+    "launch_force": 0,
+    "knockdown": false,
+    "can_crit": true,
+    "conditions": [
+      {
+        "type": "weapon_family",
+        "value": [
+          "POLEARM"
+        ],
+        "op": "in"
+      }
+    ],
+    "effects": [
+      {
+        "type": "dash",
+        "distance": 5,
+        "target": "self"
+      }
+    ],
+    "pierce": 99,
+    "min_level": 2
+  },
+  "mage_fireball": {
+    "id": "mage_fireball",
+    "name": "火球",
+    "is_skill": true,
+    "presentation_type": "CASTER_ACTION",
+    "startup": 0.18,
+    "active": 0.12,
+    "recovery": 0.28,
+    "cooldown": 6,
+    "costs": {
+      "Energy": 10
+    },
+    "gains": {},
+    "formula": {
+      "base": 70,
+      "weapon": 1,
+      "INT": 10
+    },
+    "damage_type": "FIRE",
+    "targeting": "DIRECTION",
+    "range": 16,
+    "radius": 2,
+    "angle": 90,
+    "width": 0.6,
+    "poise_damage": 20,
+    "knockback_force": 2,
+    "launch_force": 0,
+    "knockdown": false,
+    "can_crit": true,
+    "conditions": [],
+    "effects": [
+      {
+        "type": "status",
+        "status": "burn",
+        "duration": 3,
+        "formula": {
+          "base": 10,
+          "weapon": 0,
+          "INT": 1
+        }
+      }
+    ],
+    "projectile_speed": 14,
+    "pierce": 0,
+    "min_level": 1,
+    "spell_rank": 1
+  },
+  "mage_lightning": {
+    "id": "mage_lightning",
+    "name": "雷击",
+    "is_skill": true,
+    "presentation_type": "CASTER_ACTION",
+    "startup": 0.18,
+    "active": 0.12,
+    "recovery": 0.28,
+    "cooldown": 8,
+    "costs": {
+      "Energy": 10
+    },
+    "gains": {},
+    "formula": {
+      "base": 60,
+      "weapon": 0.8,
+      "INT": 11
+    },
+    "damage_type": "LIGHTNING",
+    "targeting": "TARGET",
+    "range": 14,
+    "radius": 1,
+    "angle": 90,
+    "width": 1,
+    "poise_damage": 45,
+    "knockback_force": 2,
+    "launch_force": 0,
+    "knockdown": false,
+    "can_crit": true,
+    "conditions": [],
+    "effects": [],
+    "min_level": 1,
+    "spell_rank": 1
+  },
+  "mage_earth_spike": {
+    "id": "mage_earth_spike",
+    "name": "地刺",
+    "is_skill": true,
+    "presentation_type": "CASTER_ACTION",
+    "startup": 0.18,
+    "active": 0.12,
+    "recovery": 0.28,
+    "cooldown": 7,
+    "costs": {
+      "Energy": 10
+    },
+    "gains": {},
+    "formula": {
+      "base": 55,
+      "weapon": 0.7,
+      "INT": 9
+    },
+    "damage_type": "EARTH",
+    "targeting": "POINT",
+    "range": 12,
+    "radius": 3,
+    "angle": 90,
+    "width": 2,
+    "poise_damage": 55,
+    "knockback_force": 2,
+    "launch_force": 3,
+    "knockdown": false,
+    "can_crit": true,
+    "conditions": [],
+    "effects": [],
+    "shape": "LINE",
+    "length": 6,
+    "min_level": 1,
+    "spell_rank": 1
+  },
+  "mage_shield": {
+    "id": "mage_shield",
+    "name": "奥术护盾",
+    "is_skill": true,
+    "presentation_type": "VFX_ONLY",
+    "startup": 0.18,
+    "active": 0.12,
+    "recovery": 0.28,
+    "cooldown": 14,
+    "costs": {
+      "Energy": 10
+    },
+    "gains": {},
+    "formula": {
+      "base": 0,
+      "weapon": 0
+    },
+    "damage_type": "PHYSICAL",
+    "targeting": "SELF",
+    "range": 3.2,
+    "radius": 3.2,
+    "angle": 90,
+    "width": 1,
+    "poise_damage": 0,
+    "knockback_force": 0,
+    "launch_force": 0,
+    "knockdown": false,
+    "can_crit": false,
+    "conditions": [],
+    "effects": [
+      {
+        "type": "shield",
+        "formula": {
+          "base": 120,
+          "weapon": 0,
+          "INT": 8
+        },
+        "target": "self",
+        "duration": 20
+      }
+    ],
+    "min_level": 1,
+    "spell_rank": 1
+  },
+  "evoker_ice_storm": {
+    "id": "evoker_ice_storm",
+    "name": "冰风暴",
+    "is_skill": true,
+    "presentation_type": "CASTER_ACTION",
+    "startup": 0.18,
+    "active": 0.12,
+    "recovery": 0.28,
+    "cooldown": 12,
+    "costs": {
+      "Energy": 35
+    },
+    "gains": {},
+    "formula": {
+      "base": 25,
+      "weapon": 0,
+      "INT": 3
+    },
+    "damage_type": "ICE",
+    "targeting": "POINT",
+    "range": 14,
+    "radius": 3.5,
+    "angle": 90,
+    "width": 1,
+    "poise_damage": 10,
+    "knockback_force": 0,
+    "launch_force": 0,
+    "knockdown": false,
+    "can_crit": true,
+    "conditions": [],
+    "effects": [
+      {
+        "type": "status",
+        "status": "slow",
+        "duration": 1.5
+      }
+    ],
+    "shape": "CIRCLE",
+    "duration": 4,
+    "tick_interval": 1,
+    "waves": 4,
+    "min_level": 2,
+    "spell_rank": 3
+  },
+  "evoker_fire_wall": {
+    "id": "evoker_fire_wall",
+    "name": "火墙",
+    "is_skill": true,
+    "presentation_type": "CASTER_ACTION",
+    "startup": 0.18,
+    "active": 0.12,
+    "recovery": 0.28,
+    "cooldown": 14,
+    "costs": {
+      "Energy": 35
+    },
+    "gains": {},
+    "formula": {
+      "base": 12,
+      "weapon": 0,
+      "INT": 1.5
+    },
+    "damage_type": "FIRE",
+    "targeting": "POINT",
+    "range": 14,
+    "radius": 3.5,
+    "angle": 90,
+    "width": 2,
+    "poise_damage": 5,
+    "knockback_force": 0,
+    "launch_force": 0,
+    "knockdown": false,
+    "can_crit": true,
+    "conditions": [],
+    "effects": [],
+    "shape": "LINE",
+    "length": 7,
+    "duration": 6,
+    "tick_interval": 0.5,
+    "waves": 12,
+    "min_level": 2,
+    "spell_rank": 3
+  },
+  "evoker_earthquake": {
+    "id": "evoker_earthquake",
+    "name": "地震术",
+    "is_skill": true,
+    "presentation_type": "CASTER_ACTION",
+    "startup": 0.18,
+    "active": 0.12,
+    "recovery": 0.28,
+    "cooldown": 15,
+    "costs": {
+      "Energy": 35
+    },
+    "gains": {},
+    "formula": {
+      "base": 80,
+      "weapon": 0,
+      "INT": 8
+    },
+    "damage_type": "EARTH",
+    "targeting": "CIRCLE",
+    "range": 3.2,
+    "radius": 4.5,
+    "angle": 90,
+    "width": 1,
+    "poise_damage": 100,
+    "knockback_force": 5,
+    "launch_force": 0,
+    "knockdown": false,
+    "can_crit": true,
+    "conditions": [],
+    "effects": [],
+    "min_level": 2,
+    "spell_rank": 3
+  },
+  "conjurer_bind": {
+    "id": "conjurer_bind",
+    "name": "束缚咒",
+    "is_skill": true,
+    "presentation_type": "CASTER_ACTION",
+    "startup": 0.18,
+    "active": 0.12,
+    "recovery": 0.28,
+    "cooldown": 10,
+    "costs": {
+      "Energy": 20
+    },
+    "gains": {},
+    "formula": {
+      "base": 0,
+      "weapon": 0
+    },
+    "damage_type": "PHYSICAL",
+    "targeting": "TARGET",
+    "range": 12,
+    "radius": 3.2,
+    "angle": 90,
+    "width": 1,
+    "poise_damage": 0,
+    "knockback_force": 0,
+    "launch_force": 0,
+    "knockdown": false,
+    "can_crit": false,
+    "conditions": [],
+    "effects": [
+      {
+        "type": "control",
+        "status": "root",
+        "duration": 2,
+        "boss_status": "binding_slow",
+        "boss_duration": 2,
+        "boss_move_speed_multiplier": 0.7
+      }
+    ],
+    "min_level": 2,
+    "spell_rank": 2
+  },
+  "conjurer_blink": {
+    "id": "conjurer_blink",
+    "name": "瞬移",
+    "is_skill": true,
+    "presentation_type": "VFX_ONLY",
+    "startup": 0.08,
+    "active": 0.12,
+    "recovery": 0.16,
+    "cooldown": 9,
+    "costs": {
+      "Energy": 20
+    },
+    "gains": {},
+    "formula": {
+      "base": 0,
+      "weapon": 0
+    },
+    "damage_type": "PHYSICAL",
+    "targeting": "POINT",
+    "range": 6,
+    "radius": 0,
+    "angle": 90,
+    "width": 1,
+    "poise_damage": 0,
+    "knockback_force": 0,
+    "launch_force": 0,
+    "knockdown": false,
+    "can_crit": false,
+    "conditions": [],
+    "effects": [
+      {
+        "type": "teleport",
+        "distance": 6,
+        "target": "self",
+        "invulnerable": false
+      }
+    ],
+    "min_level": 2,
+    "spell_rank": 2
+  },
+  "conjurer_chain_lightning": {
+    "id": "conjurer_chain_lightning",
+    "name": "雷链",
+    "is_skill": true,
+    "presentation_type": "CASTER_ACTION",
+    "startup": 0.18,
+    "active": 0.12,
+    "recovery": 0.28,
+    "cooldown": 11,
+    "costs": {
+      "Energy": 35
+    },
+    "gains": {},
+    "formula": {
+      "base": 55,
+      "weapon": 0,
+      "INT": 8
+    },
+    "damage_type": "LIGHTNING",
+    "targeting": "TARGET",
+    "range": 14,
+    "radius": 3.2,
+    "angle": 90,
+    "width": 1,
+    "poise_damage": 25,
+    "knockback_force": 2,
+    "launch_force": 0,
+    "knockdown": false,
+    "can_crit": true,
+    "conditions": [],
+    "effects": [],
+    "chain_targets": 4,
+    "chain_multiplier": 0.8,
+    "chain_range": 6,
+    "min_level": 2,
+    "spell_rank": 3
+  },
+  "conjurer_dreamwalk": {
+    "id": "conjurer_dreamwalk",
+    "name": "梦行",
+    "description": "操控12米内等级不高于自己的单位，持续15秒。本体留在原地，仍会受到伤害；到期或任一身体死亡时归还控制。消耗1点法力，冷却20秒。",
+    "target_relation": "any",
+    "is_skill": true,
+    "presentation_type": "CASTER_ACTION",
+    "animation_family": "CASTER",
+    "startup": 0.18,
+    "active": 0.12,
+    "recovery": 0.28,
+    "cooldown": 20,
+    "costs": {
+      "Energy": 20
+    },
+    "gains": {},
+    "formula": {
+      "base": 0,
+      "weapon": 0
+    },
+    "damage_type": "PHYSICAL",
+    "targeting": "TARGET",
+    "range": 12,
+    "radius": 0,
+    "angle": 90,
+    "width": 0,
+    "poise_damage": 0,
+    "knockback_force": 0,
+    "launch_force": 0,
+    "knockdown": false,
+    "can_crit": false,
+    "conditions": [
+      {
+        "type": "target_level_at_most_self"
+      }
+    ],
+    "effects": [
+      {
+        "type": "possess",
+        "target": "self",
+        "duration": 15,
+        "max_level_delta": 0
+      }
+    ],
+    "min_level": 2,
+    "spell_rank": 2
+  },
+  "duelist_fujian": {
+    "id": "duelist_fujian",
+    "name": "负剑",
+    "is_skill": true,
+    "presentation_type": "WEAPON_ACTION",
+    "startup": 0.35,
+    "active": 1.4,
+    "recovery": 0.35,
+    "cooldown": 8,
+    "costs": {
+      "Energy": 20
+    },
+    "gains": {},
+    "damage_type": "PHYSICAL",
+    "targeting": "SELF",
+    "range": 0,
+    "radius": 0,
+    "angle": 360,
+    "width": 0,
+    "poise_damage": 0,
+    "knockback_force": 0,
+    "launch_force": 0,
+    "knockdown": false,
+    "can_crit": false,
+    "conditions": [],
+    "effects": [],
+    "min_level": 2,
+    "counter_stance": {
+      "start": 0.35,
+      "end": 1.75,
+      "angle": 360,
+      "counter_action": "fujian_counter"
+    }
+  }
+}

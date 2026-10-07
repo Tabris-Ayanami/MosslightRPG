@@ -1,0 +1,6 @@
+{
+  "villager_bubble": {"name":"村民 · 木色", "fill":"e7d3ae", "edge":"826646", "ink":"4c4133", "accent":"a38a5d", "grain":"wood", "voice":"unhurried"},
+  "player_bubble": {"name":"旅人 · 云白", "fill":"f4f2e8", "edge":"a7b4ab", "ink":"40514c", "accent":"91a89b", "grain":"cloud", "voice":"clear"},
+  "demon_bubble": {"name":"恶魔 · 暮紫", "fill":"51465e", "edge":"a98aac", "ink":"f3e5ef", "accent":"be9cb9", "grain":"mist", "voice":"measured"},
+  "king_bubble": {"name":"王者 · 暖金", "fill":"e9dcb8", "edge":"98784b", "ink":"514536", "accent":"b19558", "grain":"royal", "voice":"measured"}
+}

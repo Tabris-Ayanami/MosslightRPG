@@ -1,0 +1,108 @@
+; Engine configuration file.
+; It's best edited using the editor UI and not directly,
+; since the parameters that go here are not all obvious.
+;
+; Format:
+;   [section] ; section goes between []
+;   param=value ; assign values to parameters
+
+config_version=5
+
+[animation]
+
+compatibility/default_parent_skeleton_in_mesh_instance_3d=true
+
+[application]
+
+config/name="刀剑神域 · 风与光的序章"
+run/main_scene="res://scenes/frontend/bootstrap.tscn"
+config/features=PackedStringArray("4.7", "Forward Plus")
+config/icon="res://icon.svg"
+
+[audio]
+
+default_bus_layout="res://default_bus_layout.tres"
+
+[autoload]
+
+DialogueManager="*res://addons/dialogue_manager/dialogue_manager.gd"
+
+[display]
+
+window/size/viewport_width=1920
+window/size/viewport_height=1080
+window/size/window_width_override=1920
+window/size/window_height_override=1080
+window/stretch/mode="canvas_items"
+window/stretch/aspect="expand"
+window/size/min_width=960
+window/size/min_height=540
+
+[editor_plugins]
+
+enabled=PackedStringArray("res://addons/MarchingSquaresTerrain/plugin.cfg", "res://addons/dialogue_manager/plugin.cfg")
+
+[internationalization]
+
+locale/translations_pot_files=PackedStringArray("res://data/dialogue/village_warden.dialogue", "res://data/dialogue/village_merchant.dialogue")
+
+[layer_names]
+
+3d_physics/layer_1="Terrain"
+3d_physics/layer_2="Player"
+3d_physics/layer_3="Enemies"
+3d_physics/layer_11="Audio surface queries"
+
+[physics]
+
+3d/default_gravity=22.0
+
+[rendering]
+
+textures/canvas_textures/default_texture_filter=0
+renderer/rendering_method.mobile="forward_plus"
+lights_and_shadows/directional_shadow/soft_shadow_filter_quality=0
+environment/defaults/default_clear_color=Color(0.055, 0.09, 0.1, 1)
+
+[shader_globals]
+
+weather_clock={
+"type": "float",
+"value": 0.0
+}
+weather_wind_phase={
+"type": "float",
+"value": 0.0
+}
+weather_wetness={
+"type": "float",
+"value": 0.0
+}
+weather_surface_scale={
+"type": "float",
+"value": 1.0
+}
+weather_surface_arrival={
+"type": "sampler2D",
+"value": "res://assets/weather/surface_arrival.res"
+}
+weather_wind={
+"type": "vec4",
+"value": Vector4(0.86, 0.5, 1, 1)
+}
+weather_rain={
+"type": "float",
+"value": 0.0
+}
+weather_snow={
+"type": "float",
+"value": 0.0
+}
+weather_cloud={
+"type": "float",
+"value": 0.0
+}
+weather_light={
+"type": "vec3",
+"value": Vector3(1, 1, 1)
+}
